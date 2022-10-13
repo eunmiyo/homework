@@ -72,6 +72,14 @@ body {
     width: 200px;
 }
 
+/* #signup input:not([type=radio]) {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 5px;
+    width: 200px;
+} */
+
 /* input태그에서 required 속성을 가진 요소를 선택 */
 #signup input[required] {
     border: 1px solid red;
