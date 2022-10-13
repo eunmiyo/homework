@@ -11,32 +11,79 @@ body {
     padding: 20%;
 }
 
-#signup {}
+#signup {
+    background: #fff;
+    border: 1px solid #222;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+}
 
-#signup fieldset {}
+#signup fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
 
-#signup fieldset:last-of-type {}
+#signup fieldset:last-of-type {
+    border: none;
+}
 
 /* 로그인 정보, 개인 정보 */
-#signup legend {}
+#signup legend {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
 
 /* 로그인 정보 li, 개인 정보 li 모두 선택 */
-#signup ul li {}
+#signup ul li {
+    line-height: 30px;
+    list-style: none;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+}
 
 /* label 요소 모두 */
-#signup label {}
+#signup label {
+    float: left;
+    font-size: 13px;
+    width: 110px;
+}
 
 /* 제출버튼 */
-#signup button {}
+#signup button {
+    border: 1px solid #222;
+    border-radius: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 7px 25px;
+    display: block;
+    margin: 0 auto;
+}
 
+ /* input타입이 text, password, tel, email  */
 #signup input[type=text], #signup input[type=password], 
-#signup input[type=email], #signup input[type=tel] {}
+#signup input[type=email], #signup input[type=tel] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 5px;
+    width: 200px;
+}
 
 /* input태그에서 required 속성을 가진 요소를 선택 */
-#signup input[required] {}
+#signup input[required] {
+    border: 1px solid red;
+}
 
 /* input태그에서 readonly 속성을 가진 요소를 선택 */
-#singup input[readonly] {}
+#singup input[readonly] {
+    border: none;
+}
 
 /* 버튼에 마우스를 올렸을 때 */
-#singup button:hover {}
+#singup button:hover {
+    background: #222;
+    color: #fff;
+}
