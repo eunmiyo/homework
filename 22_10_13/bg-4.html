@@ -17,7 +17,8 @@
       /* 간단하게 쓸 때 추천, left top 배경 포지션 주기 */
       background:url('../images/bg4.jpg') no-repeat left top;
     }
-    #bg1 { background-size:auto;}  /* 원래 배경 이미지 크기로 표시 */
+    /* !important; 하면 가장 최우선 적용 */
+    #bg1 { background-size:auto !important;}  /* 원래 배경 이미지 크기로 표시 */
     #bg2 { background-size:200px;}  /* 너비는 200px, 높이는 자동 계산 */
     #bg3 { background-size:50%;}  /* 배경 이미지 너비는 요소 너비의 50%, 높이는 자동 계산 */
     #bg4 { background-size:100% 100%;}  /* 배경 이미지 너비와 높이는 요소 너비의 100%, 요소 높이의 100% */ 
