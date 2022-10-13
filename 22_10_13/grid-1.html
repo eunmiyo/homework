@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Grid Layout</title>
+  <style>
+    #wrapper{
+    display: grid;  /* 그리드 컨테이너 지정 */
+    grid-template-columns: 200px 200px 200px;  /* 너비 200px 칼럼 3개, px:고정 */
+    /* grid-template-columns: 1fr 1fr 1fr; fr:비율 */
+    /* grid-template-columns: repeat(3, 1fr); // 1fr을 3번 반복 */
+    grid-template-rows: 100px; /* 줄 높이 100px, minmax(100px(최소),auto) */
+    /* grid-template-rows: minmax(100px,auto); 100최소, */
+    /* grid-gap: 30px 20px; : 열, 행 간격
+    grid-column-gap: 30px; : 열 간격
+    grid-row-gap: 20px; : 행 간격 */
+
+  }
+  .items{
+    padding: 10px;
+    background-color: #eee;
+  }   
+  .items:nth-child(odd){
+    background-color: #bbb;
+  }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+    <div class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+    <div class="items">Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+    <div class="items">Lorem ipsum dolor sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+    <div class="items">Lorem, ipsum dolor.</div>
+  </div>
+</body>
+</html>
