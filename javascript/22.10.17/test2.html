@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복합대입연산자</title>
+</head>
+<body>
+    <script>
+        const a = 2, b = 12;
+        let sum = 10;
+
+        //복합 대입 연산자
+        // console.log(sum = sum + a);
+        console.log(sum += a);
+        console.log(sum -= a); 
+        console.log(sum *= a); 
+        console.log(sum /= a); 
+        console.log(sum %= a); 
+
+        //변수를 선언합니다.
+        let list = '';
+
+        //연산자를 사용합니다.
+        list += '<ul>';
+        list += '   <li>hello</li>';
+        list += '   <li>javascript..!</li>';
+        list += '<ul>';
+        console.log(list);
+        document.write(list);
+    </script>
+</body>
+</html>
