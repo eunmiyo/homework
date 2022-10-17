@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자료와변수</title>
+</head>
+<body>
+    <script>
+        // alert("text!"); /* 경고창 */
+
+        // confirm("확인하시겠습니까?"); /* 확인, 취소 */
+
+        // prompt("입력하세요"); /* ("질문",초기값) 입력창 */
+
+        // console.log("안녕하세요"); /* 콘솔창에 출력 */
+
+        // document.write("안녕히가세요"); /* 브라우저에 출력 */
+
+        var str = "test"; /* 문자형 */
+        console.log(str);
+
+        var str2 = "i " + "am " + str; /* 문자열 합산 */
+        console.log(str2);
+
+        var str3 = "1"; /* ""문자형 */
+        var sum = 10;
+        console.log(str3+sum) /* 더하기를 할 때 하나라도 문자형이 있으면 문자열 합산을 한다 */
+        console.log('안녕하세요. 저는 \'은미\' 입니다.') /* '안에 같은'' 넣으려면 \'\'로 따옴표 앞에 넣어줘야함' */
+
+        // var num = 100; /* 숫자형 */
+        // console.log(num); 
+        var num = 9;
+        var num2 = 2;
+        console.log(num + num2);
+        console.log(num - num2);
+        console.log(num * num2);
+        console.log(num / num2);
+        console.log(num % num2);
+
+        var flag = true; /* boolean(불린)형 */
+        console.log(flag); /* 결과값이 true, false 인지 출력 */
+
+        var flag = 10 == 10; /* 양쪽이 같다, 값만 비교 */
+        var flag = 10 != 5; /* 양쪽이 다르다, 값만 비교 */
+        console.log(flag);
+
+        // var a = 10;
+        // var b = 20;
+        // var c = 10;
+        // var f = "20";
+
+        // var result = b === f; /* 양쪽이 같지만 값 비교, 자료형 비교*/
+        // var result2 = b !== f; /* 양쪽이 다르지만 값 비교, 자료형 비교 */
+        
+        // console.log(result);
+        // console.log(result2);
+
+        // var a;
+        // var b = null; 
+        // console.log(a); /* undefined  값이 지정되지 않음 */
+        // console.log(b); /* null은 빈값 */
+
+        // undefined, null, 빈문자열(""), 0을 제외한 모든 것은 true
+
+        // console.log(Boolean(b));
+
+        // var flag1 = 10>2, flag2 = 10<5, flag3 = 2>=1;
+        // console.log(flag1 && flag2 && flag3); /* && and, 두개 다 true여야 true */
+        // console.log(flag1 || flag2 || flag3); /* || or, 하나만 true여도 true */
+        // console.log(!flag1); /* ! not, 반대로 */
+
+        console.log(typeof(3))
+    </script>
+</body>
+</html>
