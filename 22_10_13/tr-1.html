@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Transition</title>
+	<style>
+    .box {
+      margin: 20px auto;
+      width: 100px;
+      height: 100px;
+      background-color: #07f;
+      border: 1px solid #222;
+      transition-property: width, height;  /* 트랜지션 대상 - 너비, 높이 */
+      transition-duration: 2s, 1s;  /* 트랜지션 시간(s 초단위) - 2초(너비), 1초(높이) */
+      transition-delay: 2s, 2s ; /* (시간)초 뒤에 움직이겠다 */
+      transition-timing-function: ease-in; /* 애니메이션 진행 방향, 커스텀도 가능, linear /(방향) */
+    }
+    .box:hover {
+      width: 200px;
+      height: 120px;		
+    }
+	</style>
+</head>
+<body>
+	<div class="box"></div>	
+</body>
+</html>
