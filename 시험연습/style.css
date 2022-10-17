@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 @charset "utf-8";
+=======
+@charset "UTF-8";
+>>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
 
 * {
     margin: 0;
     padding: 0;
 }
 
+<<<<<<< HEAD
 html {
     font-size: 10px;
 }
@@ -18,16 +23,36 @@ ul, li {
     list-style: none;
 }
 
+=======
+>>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
 .wrap {
     width: 1000px;
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
+=======
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    font-size: 10px;
+}
+
+.board_list caption {
+    font-size: 1.5rem;
+    padding: 30px;
+}
+
+>>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
 .board_list {
     width: 100%;
     border-top: 1px solid #444;
     border-collapse: collapse;
     font-size: 1.5rem;
+<<<<<<< HEAD
 }
 
 .board_list caption {
@@ -59,19 +84,58 @@ ul, li {
     padding: 10px;
     border: 1px solid #000;
     border-radius: 5px;
+=======
+    border-spacing: 0;
+}
+
+.board_list th,td {
+    border-bottom: 1px solid #444;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+
+.title a:hover {
+    text-decoration: underline;
+}
+
+.bt_wrap {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.bt_wrap a {
+    display: inline-block;
+    min-width: 80px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 10px;
+>>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
     font-size: 1.4rem;
     text-align: center;
 }
 
+<<<<<<< HEAD
 .board_bt a:hover {
+=======
+.bt_wrap a:hover {
+>>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
     text-decoration: underline;
 }
 
 .board_page {
+<<<<<<< HEAD
     margin-top: 30px;
     text-align: center;
     display: flex;
     justify-content: center;
+=======
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+>>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
 }
 
 .board_page a {
@@ -79,6 +143,10 @@ ul, li {
     width: 32px;
     height: 32px;
     box-sizing: border-box;
+<<<<<<< HEAD
+=======
+    /* border-left: 0; */
+>>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
     line-height: 32px;
 }
 
@@ -87,12 +155,21 @@ ul, li {
 }
 
 .board_page a.bt {
+<<<<<<< HEAD
     font-size: 1.6rem;
+=======
+    font-size: 1.5rem;
+>>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
     letter-spacing: -1px;
 }
 
 .board_page a.num {
+<<<<<<< HEAD
     font-size: 1.6rem;
+=======
+    font-size: 1.4rem;
+
+>>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
 }
 
 .board_page a.num.on {
@@ -110,7 +187,10 @@ ul, li {
 @media all and (max-width: 767px) {
     .wrap {
         width: 95vw;
+<<<<<<< HEAD
         margin: 0 auto;
+=======
+>>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
     }
 
     .board_list th:nth-of-type(1),
@@ -127,4 +207,9 @@ ul, li {
     .board_list td:nth-of-type(3) {
         display: none;
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
