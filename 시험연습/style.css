@@ -1,15 +1,10 @@
-<<<<<<< HEAD
 @charset "utf-8";
-=======
-@charset "UTF-8";
->>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
 
 * {
     margin: 0;
     padding: 0;
 }
 
-<<<<<<< HEAD
 html {
     font-size: 10px;
 }
@@ -19,123 +14,59 @@ a {
     color: inherit;
 }
 
-ul, li {
-    list-style: none;
-}
-
-=======
->>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
 .wrap {
     width: 1000px;
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
-=======
-a {
-    text-decoration: none;
-    color: black;
-}
-
-html {
-    font-size: 10px;
-}
-
-.board_list caption {
-    font-size: 1.5rem;
-    padding: 30px;
-}
-
->>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
 .board_list {
     width: 100%;
     border-top: 1px solid #444;
     border-collapse: collapse;
     font-size: 1.5rem;
-<<<<<<< HEAD
 }
 
 .board_list caption {
     padding: 30px;
-}
-
-.board_list th,
-.board_list td {
-    border-spacing: 0;
-    border-bottom: 1px solid #444;
-    padding: 10px;
-    text-align: center;
 }
 
 .board_list td.title > a:hover {
     text-decoration: underline;
 }
 
+.board_list th,
+.board_list td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    text-align: center;
+}
+
 .board_bt {
     margin-top: 30px;
-    text-align: right;
     font-size: 0;
+    text-align: right;
 }
 
 .board_bt a {
     display: inline-block;
     min-width: 80px;
-    margin-left: 10px;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 5px;
-=======
-    border-spacing: 0;
-}
-
-.board_list th,td {
-    border-bottom: 1px solid #444;
-    border-collapse: collapse;
     text-align: center;
-    padding: 10px;
-}
-
-.title a:hover {
-    text-decoration: underline;
-}
-
-.bt_wrap {
-    margin-top: 30px;
-    text-align: right;
-}
-
-.bt_wrap a {
-    display: inline-block;
-    min-width: 80px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    margin-left: 10px;
-    padding: 10px;
->>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
     font-size: 1.4rem;
-    text-align: center;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
 }
 
-<<<<<<< HEAD
 .board_bt a:hover {
-=======
-.bt_wrap a:hover {
->>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
     text-decoration: underline;
 }
 
 .board_page {
-<<<<<<< HEAD
     margin-top: 30px;
-    text-align: center;
     display: flex;
-    justify-content: center;
-=======
-    display: flex;
-    margin-top: 30px;
-    justify-content: center;
     text-align: center;
->>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
+    justify-content: center;
 }
 
 .board_page a {
@@ -143,73 +74,51 @@ html {
     width: 32px;
     height: 32px;
     box-sizing: border-box;
-<<<<<<< HEAD
-=======
-    /* border-left: 0; */
->>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
     line-height: 32px;
+    border-left: 0;
+
+}
+
+.board_page a.bt {
+    font-size: 1.3rem;
+    letter-spacing: -1px;
+}
+
+.board_page a.num {
+    font-size: 1.4rem;
+}
+
+.board_page a.num.on{
+    background: #000;
+    color: #fff;
 }
 
 .board_page a:hover {
     text-decoration: underline;
 }
 
-.board_page a.bt {
-<<<<<<< HEAD
-    font-size: 1.6rem;
-=======
-    font-size: 1.5rem;
->>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
-    letter-spacing: -1px;
-}
-
-.board_page a.num {
-<<<<<<< HEAD
-    font-size: 1.6rem;
-=======
-    font-size: 1.4rem;
-
->>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
-}
-
-.board_page a.num.on {
-    border-color: #000;
-    background: #000;
-    color: #fff;
-}
-
-@media all and (max-width: 1000px) {
+@media all and (max-width:1000px) {
     .wrap {
         width: 100vw;
     }
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width:767px) {
     .wrap {
         width: 95vw;
-<<<<<<< HEAD
         margin: 0 auto;
-=======
->>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
     }
 
     .board_list th:nth-of-type(1),
     .board_list td:nth-of-type(1) {
         display: none;
     }
-
     .board_list th:nth-of-type(2),
     .board_list td:nth-of-type(2) {
         display: none;
     }
-
     .board_list th:nth-of-type(3),
     .board_list td:nth-of-type(3) {
         display: none;
     }
-<<<<<<< HEAD
-}
-=======
-}
 
->>>>>>> 69b9ac119473f61bfb4167a20c03a3e8de85ed40
