@@ -5,99 +5,176 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IBK기업은행</title>
+
     <style>
         * { margin: 0; padding: 0;}
-        a {text-decoration: none; !important;}
-        img {border: 0;}
+        a {text-decoration: none !important;}
         ul {list-style: none;}
-        header, section, footer {box-sizing: border-box;}
-        .footer { background: gray;}
+        
+        .footer { 
+            width: 1200px;
+            height: 100px;
+            background: gray;
+        }
 
-        /* 0 ~ 766px */
-        .header__nav {
+        .main {
             max-width: 1200px;
-            background: #81BEF7;
             margin: 0 auto;
-            display: flex;
         }   
 
-        .header__nav > h1 {
-            width: 100px;
-            height: 120px;
+        .header__wrap {
+            display: grid;
+            grid-template-columns: 200px 900px 100px;
+            grid-template-rows: repeat(2, 100px);
+            grid-gap: 0;
+        }
+
+        .header__right {
+            grid-column: 1;
+            grid-row: 1/3;
             background: #81BEF7;
         }
 
-        .header__nav > nav {
-            width: calc(100% - 100px);
-            height: 120px;
+        .header__up {
+            grid-column: 2;
+            grid-row: 1;
             background: #D8CEF6;
         }
 
-        .header__nav > nav > ul {
+        .header__down {
+            grid-column: 2;
+            grid-row: 2;
+            background: #A9BCF5;
+        }
+
+        .header__left {
+            grid-column: 3;
+            grid-row: 1/3;
+            background: #A9F5F2;    
+        }
+
+        .header__up > ul {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
         }
 
-        .header__nav > .header__menu {
-            width: 100px;
-        }
-
-        .wrap {
-            max-width: 1200px;
-            margin: 0 auto;
+        .header__down > ul {
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
         }
 
         .slider {
+            width: 1200px;
             height: 300px;
             background: #F6CED8;
         }
 
         .guide {
+            width: 1200px;
             height: 50px;
             background: #0040FF;
         }
 
-        .guide__content > ul {
+        .guide > ul {
             display: flex;
             justify-content: space-between;
             text-align: center;
         }
 
         .event {
-            height: 200px;
-              margin: 0 auto;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 800px 400px;
+            grid-template-rows: repeat(2, 100px);
+            grid-gap: 0;
+
         }
 
-        .event__content {
-            overflow: hidden;  
-        }
-
-        .event__content > .content__left {
-            float: left;
-            width: 70%;
+        .event > .event__left {
+            grid-column: 1 ;
+            grid-row: 1/3;
             background: #F7819F;   
 
         }
 
-        .event__content > .content__right1{
-            float: right;
-            width: 30%;
+        .event > .event__right1{
+            grid-column: 2 ;
+            grid-row: 1/2;
             background: #F5D0A9;   
         }
 
-        .event__content > .content__right2 {
-            float: right;
-            width: 30%;
+        .event > .event__right2 {
+            grid-column: 2 ;
+            grid-row: 2/3;
             background: #D0F5A9;    
         }
 
+        .news {
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 300px 450px 450px;
+            grid-template-rows: repeat(4, 100px);
+            grid-gap: 0;
+        }
+
+        .news > .news__right1 {
+            grid-column: 1;
+            grid-row: 1/3;
+            background: #04B4AE; 
+        }
+        
+        .news > .news__right2 {
+            grid-column: 1;
+            grid-row: 3/5;
+            background: #31B404; 
+        }
+
+        .news > .news__center {
+            grid-column: 2;
+            grid-row: 1/4;
+            background: #FF00FF; 
+        }
+
+        .news > .news__left {
+            grid-column: 3;
+            grid-row: 1/4;
+            background: #8258FA;
+        }
+
+        .news > .news__down {
+            grid-column: 2/4;
+            grid-row: 4;
+            background: #FE642E;
+        }
+
+        .news__down > ul {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <header class="header">
-        <div class="header__nav">
-            <h1>기업은행</h1>
-            <nav>
+    <div class="main">
+        <section class="header__wrap">
+            <div class="header__right">            
+                <h1>기업은행</h1>
+            </div>
+
+            <section class="header__up">
+                <ul>
+                    <li>금융사기예방센터</li>
+                    <li>고객센터</li>
+                    <li>마이페이지</li>
+                    <li>정보공개</li>
+                    <li>은행소개</li>
+                    <li>IR</li>  
+                    <li>영업정안내</li>  
+                    <li>Globla</li>  
+                </ul>
+            </section>
+            <section class="header__down">
                 <ul>
                     <li>개인뱅킹</li>
                     <li>기업뱅킹</li>
@@ -105,17 +182,17 @@
                     <li>금융서비스</li>
                     <li>금융정보</li>
                 </ul>
-            </nav>
-            <div class="header_menu">전체메뉴</div>
-        </div>
-    </header>
+            </section>
+            <section class="header__left">
+                <div>전체메뉴</div>
+            </section>
+        </section>
 
     <div class="wrap">
         <section class="slider">
             <div class="slider__content"></div>
         </section>
         <section class="guide">
-            <div class="guide__content con">
                 <ul>
                     <li>계좌조회</li>
                     <li>카드조회</li>
@@ -126,21 +203,18 @@
                     <li>서민금융</li>
                     <li>IBK 부동산 매물광장</li>
                 </ul>
-            </div>
         </section>
         <section class="event">
-            <div class="event__content con">
-                <div class="content__left ">IBK적금</div>
-                <div class="content__right1">알림</div>
-                <div class="content__right2">이벤트</div>
-            </div>
+                <div class="event__left">IBK적금</div>
+                <div class="event__right1">알림</div>
+                <div class="event__right2">이벤트</div>
         </section>
         <section class="news">
-            <div class="news__content con">
-                <div class="content__3">IBK큐브</div>
-                <div class="content__4">금융정보톡</div>
-                <div class="content__5">새소식</div>
-                <div class="content__6">공고</div>
+                <div class="news__right1">IBK큐브</div>
+                <div class="news__right2">금융정보톡</div>
+                <div class="news__center">새소식</div>
+                <div class="news__left">공고</div>
+                <div class="news__down">
                 <ul>
                     <li>지급보증서 발급조회</li>
                     <li>잔액증명서 발급조회</li>
@@ -150,7 +224,7 @@
                     <li>이메일상담</li>
                     <li>IBK퇴직연금</li>
                 </ul>
-            </div>
+                </div>
         </section>
     </div>
     <footer class="footer"></footer>
