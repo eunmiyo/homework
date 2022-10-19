@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while반복문</title>
+</head>
+<body>
+    <script>
+        /* while은 안에 조건문을 넣을 수 없음  */
+        let i = 0;
+        const arr = [1, 2, 3, 4, 5];
+
+        while (i < arr.length) { /* while ~동안 (조건식)이 참일 때 까지 반복  */
+            console.log(`${i}: ${arr[i]}`);
+            i = i + 1;
+        }
+    </script>
+</body>
+</html>

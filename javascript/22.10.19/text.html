@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이중 for문</title>
+</head>
+<body>
+    <script>
+        let output = '';
+
+        for (let i = 1; i < 10; i++) {
+            for (let j = 0; j < i; j++) {
+                output += '*';
+            }
+
+            output += '\n'; /* 줄바꿈  */
+        }
+
+        console.log(output);
+
+        for (let i = 0; i < 10; i++) { /* 10행 7열  */
+            for (let j = 0; j < 7; j++) {
+                output += '*';
+            }
+
+            output += '\n'; /* 줄바꿈  */
+        }
+
+        console.log(output);
+        
+    </script>
+</body>
+</html>
