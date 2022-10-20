@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BMI지수구하기</title>
 </head>
 <body>
     <script>
@@ -28,11 +28,23 @@
 
         // bmi(50, 1.63);
 
-        const bmi = (wei, hei) => wei / (hei * hei);
+        //익명 함수
+        // function bmi(wei, hei){
+        //     let result = wei / (hei * hei);
+        //     return result;
+        // }
 
-        var result = bmi(50, 1.63);
+        // let result2 = bmi(50,1.63);
+        // console.log(result2);
+
+        //비익명 함수
+        const bmi = (wei, hei) {
+            let result = wei / (hei * hei);
+            return result;
+        }
+
+        bmi(50,1.63);
         console.log(result);
-
     </script>
 </body>
 </html>

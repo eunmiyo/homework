@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+</head>
+<body>
+    <script>
+
+        function sumall(num1, num2) { 
+            let output = 0;
+            for (let i = num1; i <= num2; i++){
+                console.log(i);
+                output += i; //누적합산
+            }
+            return output;
+        }  
+
+        console.log(`합계: ${sumall(1, 10)}`);
+    </script>
+</body>
+</html>

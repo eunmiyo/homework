@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역변수</title>
+    <body>
+        <script>
+            var num = 1; /* 전역변수, 함수 밖에 있는 어디서든 사용가능 */
+            //함수선언, 스코프(변수 또는 함수의 유효범위)
+            function love(){
+              var a = num+1; /* 지역변수, 스코프 영역에서만 사용가능 */
+              console.log('a:',a);
+            }
+            love();
+            console.log(num);
+
+            // var num = 1; 
+
+            // 함수선언
+            // function love(){
+            //   var b = 10; // 지역변수, 함수선언 안에서만 쓸 수 있다.
+            //   var a = num+1;
+            //   console.log('a:',a);
+            // }
+            // love();
+            // console.log(num);
+            // console.log(b); // 불러나오지 못함
+        </script>
+</body>
+</html>

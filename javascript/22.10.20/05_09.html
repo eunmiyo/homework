@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블록 변수 let</title>
+</head>
+<body>
+<script>
+function logScope(){
+let local = 2;
+    if(local){ //자신이 속한 중괄호{} 안에서만 사용할 수 있다.
+        let local = '다른 값';
+        console.log('블럭안의 var:',local);
+    }
+    console.log('local',local)
+}
+logScope();
+</script>
+</body>
+</html>

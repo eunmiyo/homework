@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+</head>
+<body>
+    <script>
+        // function leapyear(year) {
+        //     return ((year % 4 === 0) && (year % 100 != 0)) || (year % 400 === 0);
+        // }
+
+        // console.log(`2024년은 윤년인가요? ${leapyear(2024)}`);
+        // console.log(`2022년은 윤년인가요? ${leapyear(2022)}`);
+        // console.log(`2020년은 윤년인가요? ${leapyear(2020)}`);
+
+        // function leapyear(year) {
+        //     return ((year % 4 === 0) && (year % 100 != 0)) || (year % 400 === 0);
+        // }
+        // let result = leapyear(2024);
+
+        // if (result) {
+        //     console.log('윤년입니다.');
+        // } else {
+        //     console.log('윤년이 아닙니다.');
+        // }
+
+        function leapyear(year=new Date().getFullYear()) {
+            return ((year % 4 === 0) && (year % 100 != 0)) || (year % 400 === 0);
+        }
+        let result = leapyear(2024);
+
+        if (result) {
+            console.log('윤년입니다.');
+        } else {
+            console.log('윤년이 아닙니다.');
+        }
+    </script>
+</body>
+</html>
