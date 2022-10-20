@@ -8,24 +8,29 @@
 </head>
 <body>
     <script>
-        // 3초마다 나오는 숫자에서 최소값 구하기
+        // 2초마다 나오는 숫자에서 최소값 구하기
 
-        let cnt = [34, 10, 17, 46, 49];
-        let output;
+        const num = [34, 10, 17, 46, 49];
+        let i = 0;
+        let j = 0;
+        let item = num[0];
 
-        let id =  setInterval(()=>{
-            console.log(cnt);
-            cnt[0]++;
-        }, 2000)
+        let st = setTimeout(display_array, 2000);
 
-
-        // for (const item of cnt){
-        //     if (output < item){
-        //         output = item;
-        //     }
-                return output;
-        // }
-
+        function display_array() {
+            if (i < num.length) {
+                console.log(num[i]);
+                i++;
+                st = setTimeout(display_array, 2000);
+            } else {
+                for(j=0; j<num.length; j++){
+                    if( item > num[j]) {
+                        item = num[j];
+                    }
+                }   
+                console.log(`최소값: ${item}`);
+            }
+        }
 
     </script>
 </body>
