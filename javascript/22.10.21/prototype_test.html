@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype방식</title>
+</head>
+<body>
+    <script>
+        //3. prototype 방식
+        //객체 = 속성 + 메소드(함수)
+
+        function Pet(name,age,type) {
+            //속성
+            this.name = name;
+            this.age = age;
+            this.type = type;
+        }
+
+        // 객체명.prototype.함수명 = function(){}
+        Pet.prototype.eat = function(food) {
+            // console.log(`${this.name}이가 ${food}를 먹습니다.`);
+        }
+        Pet.prototype.ageprint = function() {
+            // console.log(this.name+'이의 나이는 '+this.age+'살 입니다.');
+        } 
+        Pet.prototype.typeprint = function() {
+            // console.log(`${this.name}이(는) ${this.type}입니다.`);
+        }
+
+        console.log(`${this.name}이는 ${this.age}살이고, 종류는 ${this.type}입니다. ${food}를 먹고있습니다.`);
+
+        const pet = new Pet("구름", 2, "비숑");
+        const pet2 = new Pet("지구", 4, "푸들");
+        const pet3 = new Pet("반달", 6, "진돗개");
+        const pet4 = new Pet("룽지", 8, "포메");
+        
+        pet.eat("밥");
+        pet.ageprint();
+        pet.typeprint();
+
+        pet2.eat("간식");
+        pet2.ageprint();
+        pet2.typeprint();
+
+        pet3.eat("고구마");
+        pet3.ageprint();
+        pet3.typeprint();
+
+        pet4.eat("물");
+        pet4.ageprint();
+        pet4.typeprint();
+
+    </script>
+</body>
+</html>
