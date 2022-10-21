@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literal방식</title>
+</head>
+<body>
+    <script>
+        //1. 리터럴 방식(6-1-1.html)
+        //객체 = 속성 + 메소드(함수)
+
+        // 나이, 종 속성 추가해보기
+        // 함수 추가해보기 : 잠자는 함수. 어디서 자는지 매개변수 추가
+
+        const pet = {
+            name : '구름',
+            age : '2살',
+            type : '비숑',
+        //     eat : function(food){
+        //         console.log(`구름이가 ${food}을 먹습니다.`);
+        //         // return
+        //     },
+        //     sleep : function(where){
+        //         console.log(`구름이가 ${where}에서 잠을 잡니다.`);
+        //     }
+
+            eat: (food) => {
+                console.log(`구름이가 ${food}을 먹습니다`);
+            },
+            sleep: (where) => {
+                console.log(`구름이가 ${where}에서 잠을 잡니다.`);
+            }
+        }
+
+
+        console.log(pet.name);
+        // 매개변수를 줄 수 있다.
+        pet.eat('간식');
+        pet.sleep('쇼파');
+        console.log(pet.age);
+        console.log(pet.type);
+        // console.log(pet.name+'의 나이는 '+pet.age +' 종은 '+pet.type +'입니다.'+'밥은 '+pet.eat);
+    </script>
+</body>
+</html>

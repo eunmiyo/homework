@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new방식</title>
+</head>
+<body>
+    <script>
+        // 2. 객체 생성자 함수 방식
+        // 객체 = 속성 + 메소드(함수)
+        // quiz: 고양이 종류 넣고 메소드로 종류 출력하기
+
+        //객체 정의
+        function Pet(name, age, type, sleep) { /* Pet 첫 글자는 대문자로 */
+            //속성
+            this.name = name; /* this = Pet 현재 내가 있는 객체를 가르킨다. name : 매개변수에서 받아옴*/
+            this.age = age; /* age는 매개변수에서 받아옴*/
+            this.type = type;
+            this.sleep = sleep;
+            //메소드
+            this.eat = function(food) {
+                console.log(`${this.name}이(가) ${food}를 먹습니다.`);
+            }
+            this.ageprint = function(){
+                console.log(this.name+'의 나이는 '+this.age+'살 입니다.');
+        
+            }
+            this.typeprint = () => {
+                console.log(this.name+'의 나이는 '+this.age+ '살 종류는 '+this.type+'입니다.');
+            }
+            this.sleepprint = () => {
+                console.log(this.name+'이(가) '+this.sleep+'에서 잠을 잡니다.');
+            }
+
+        }
+
+        //객체 생성
+        //객체를 쓰는 이유? 코드의 생산성이 높아진다.
+        //객체가 생성되는 순간 속성에 값이 할당된다.
+        // pet, pet2, pet3, pet4 라는 방이 하나씩 생긴다.
+        const pet = new Pet("구름", 2, "비숑", "쇼파"); /* 객체 안에 있는 걸 가져다 쓸 수 있다. */
+        const pet2 = new Pet("별", 5, "말티즈", "책상"); 
+        const pet3 = new Pet("달", 7, "푸들", "침대");
+        const pet4 = new Pet("해", 9, "웰시코기", "바닥");
+
+        pet.eat('밥');
+        pet.ageprint();
+        pet.typeprint();
+        pet.sleepprint();
+
+        pet2.eat('간식');
+        pet2.ageprint();
+        pet2.typeprint();
+        pet2.sleepprint();
+
+        pet3.eat('수박');
+        pet3.ageprint();
+        pet3.typeprint();
+        pet3.sleepprint();
+
+        pet4.eat('고구마');
+        pet4.ageprint();
+        pet4.typeprint();
+        pet4.sleepprint();
+    </script>
+</body>
+</html>
