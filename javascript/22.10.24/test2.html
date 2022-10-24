@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        첫번째 div
+        <span>테스트입니다.</span>
+            <li>
+                <p>월요일</p>
+                <p>화요일</p>
+            </li>
+    </div>
+    <script>
+        // createElement('태그명') : 해당 요소를 생성
+        /* <h1></h1>*/
+        const header = document.createElement('h1'); 
+        const main = document.createElement('ul');
+        console.log(header);
+        console.log(main);
+
+
+        document.body.appendChild(header);
+        // document.ul.appendChild(main);
+        // appendChild: ~에 넣는다
+        // <body>태그 부모요소 아래에 (header) 자식요소로 넣는다.
+
+        const box = document.querySelector('.box');
+        const spanTag = document.querySelector('span');
+
+        box.appendChild(header); /* 추가 */
+        box.appendChild(main);
+        box.removeChild(spanTag); /* 삭제 */
+    </script>
+</body>
+</html>
