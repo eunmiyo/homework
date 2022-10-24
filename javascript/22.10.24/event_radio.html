@@ -34,7 +34,7 @@
         radio.forEach(function(radio){
             radio.addEventListener('change', function(e){
                 const current = e.currentTarget
-                if (current.checked) { /* 체크가 되어있는지 확인, 체크가 되어 있으면 true*/
+                if (current.checked) { /* 체크가 되어있는지 확인, 체크가 되어 있으면 true */
                     output.textContent = `${current.value}`
                 }
             })

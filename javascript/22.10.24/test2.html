@@ -10,22 +10,15 @@
     <div class="box">
         첫번째 div
         <span>테스트입니다.</span>
-            <li>
-                <p>월요일</p>
-                <p>화요일</p>
-            </li>
     </div>
     <script>
         // createElement('태그명') : 해당 요소를 생성
         /* <h1></h1>*/
         const header = document.createElement('h1'); 
-        const main = document.createElement('ul');
         console.log(header);
-        console.log(main);
 
 
         document.body.appendChild(header);
-        // document.ul.appendChild(main);
         // appendChild: ~에 넣는다
         // <body>태그 부모요소 아래에 (header) 자식요소로 넣는다.
 
@@ -33,7 +26,6 @@
         const spanTag = document.querySelector('span');
 
         box.appendChild(header); /* 추가 */
-        box.appendChild(main);
         box.removeChild(spanTag); /* 삭제 */
     </script>
 </body>

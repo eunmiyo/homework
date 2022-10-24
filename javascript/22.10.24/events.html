@@ -18,6 +18,7 @@
         let counter = 0;
         const h1 = document.querySelector('h1');
 
+        // 방법1
         //addEventListener('이벤트명', 콜백 함수)
         // h1.addEventListener('click', function(){
             //클릭했을 때 실행되길 원하는 코드 작성
@@ -25,14 +26,16 @@
         //    counter++;
         //   h1.textContent = `클릭횟수: ${counter}`; 
         // }); /* es5 */
+
         // h1.addEventListener('click', () => {}) /* es6 */
 
-        const listrner = function() {
+        // 방법2 함수를 바깥으로 뺌
+        const listener = function() {
             counter++;
             h1.textContent = `클릭횟수: ${counter}`
         }
+        h1.addEventListener('click', listener);
 
-        h1.addEventListener('Click', listrner);
         // removeEventListener('지우고싶은 이벤트명', 콜백함수)
         // h1.removeEventListener('Click', listrner);
     </script>

@@ -14,13 +14,13 @@
     <script>
 
         const header = document.createElement('h1');
-        const box = document.querySelector('.inner');
+        const inner = document.querySelector('.inner');
 
         //parentNode: 부모 태그를 선택해 준다.
         inner.parentNode.appendChild(header);
 
-        console.log(inner.nextsibling);
-        inner.nextSibling.innerHTML = '바뀜';
+        console.log(inner.nextSibling.nextSibling)
+        inner.nextSibling.nextSibling.innerHTML = "test"
     </script>
 </body>
 </html>

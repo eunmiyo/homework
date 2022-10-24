@@ -7,7 +7,7 @@
     <title>querySelector</title>
 </head>
 <body>
-    <h1 class="txt" id="txt_hi">안녕하세요</h1>
+    <h1 class="txt">안녕하세요</h1>
     <h1 class="txt">안녕하세요</h1>
     <h1 class="txt">안녕하세요</h1>
     <h1 class="txt">안녕하세요</h1>
@@ -16,15 +16,15 @@
         /* document: 문서 */
         /* querySelector: 태그선택자, 클랙스선택자, 아이디선택자... 다 가져올수 있음 */
         /* document.querySelector('선택자') -> 해당요소를 가져온다 */
-        // const header = document.querySelector('hi');
+        // const header = document.querySelector('.txt');
         // console.log(header);
 
         /* 속성을 바꾸고 싶을 때 */
         /* 요소.style.css속성(카멜) = 'css속성값' */
         /* 속성값은 문자열로 적어주어야함! */
-        // header.style.color = 'red';
-        // header.style.backgroundColor = 'black';
-        // header.style.padding = '10px';
+        // header.style.color = 'red'
+        // header.style.backgroundColor = 'black'
+        // header.style.padding = '10px'
 
         /* document.querySelectorAll('선택자') -> 해당 요소를 모두 가져온다 */
         /* 배열로 가져옴 */
@@ -44,7 +44,7 @@
         /* 방법3 */
         headers.forEach(function(header) {
             header.style.color = 'red'
-            header.style.backgrondColor = 'green'
+            header.style.backgrondcolor = 'green'
         })
     </script>
 </body>
