@@ -17,27 +17,34 @@
     <button id="disconnect">이벤트 제거</button>
     <p>이벤트 연결 상태: 해제</p>
     <script>
-        // isConnect: 현재 이벤트의 상태를 판단하는 변수
         let counter = 0;
+        // isConnect: 현재 이벤트의 상태를 판단하는 변수(제거된 상태인 아닌지)
+        let isConnect = false;
         const h1 = document.querySelector('h1');
         const p = document.querySelector('p');
         const conButton = document.querySelector('#connect');
         const disconButton = document.querySelector('#disconnect');
 
 
-        const listrner = function() {
+        const listener = function() {
             counter++;
             h1.textContent = `클릭횟수: ${counter}`
         }
 
-        h1.addEventListener('Click', listrner);
-
-        conButton.addEventListener('Click', function(){
-
+        conButton.addEventListener('click', function(){
+            if (isConnect === false){ /* 이벤트가 연결이 안된 상태일 때 */
+                h1.addEventListener('click', listener);
+                p.textContent = '이벤트 연결 상태: 연결'
+                isConnect = true;
+            }
         })
 
-        disconButton.addEventListener('Click', function(){
-
+        disconButton.addEventListener('click', function(){
+            if (isConnect === true){
+                h1.removeEventListener('click', listener);
+                p.textContent = '이벤트 연결 상태: 해제'
+                isConnect = false;
+            }
         })
     </script>
 </body>
