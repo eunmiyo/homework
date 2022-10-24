@@ -10,11 +10,14 @@
     <input type="text">
     <script>
         const input = document.querySelector('input')
-        input.addEventListener('keyup', function(event){
-        //    console.log(event) /* (): 발생한 이벤트에 대한 정보가 들어있다 */
-        //    console.log(event.key) /* (.key)를 하면 console에 그대로 보임, 영어 한정 */
-        //    console.log(event.code) /* (.code) 입력한 키 */
+        input.addEventListener('keydown', function(event){
+            console.log(event) /* (): 발생한 이벤트에 대한 정보가 들어있다 */
+            console.log(event.key) /* (.key)를 하면 console에 그대로 보임, 영어 한정 */
+            console.log(event.code) /* (.code) 입력한 키 */
             console.log(event.keycode) /* (.keyode) 입력한 키를 나타내는 숫자 */
+            console.log(event.altkey)
+            console.log(event.ctrlkey)
+            console.log(event.shiftkey)
         })
     </script>
 </body>
