@@ -33,14 +33,14 @@
             const options = e.currentTarget.options
             const index = e.currentTarget.options.selectedIndex
             transval = Number(options[index].value) /* 선택한 select 박스의 value값 가져오기*/
-            calculate()
+            calculate();
         })
 
         input.addEventListener('keyup', function(e){
             //입력받은 값을 가져온다.
             //계산을 한다
             currnetval = Number(e.currentTarget.value)
-            calculate()
+            calculate();
         })
     </script>
 </body>
