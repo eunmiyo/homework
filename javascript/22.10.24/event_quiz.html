@@ -16,8 +16,8 @@
     </select>
 
     <script>
-        let currentval; /* 현재값 */
-        let transval = 10; /* 변환상수 */
+        let currentVal; /* 현재값 */
+        let transVal = 10; /* 변환상수 */
 
         const select = document.querySelector('select');
         const span = document.querySelector('span');
@@ -26,20 +26,21 @@
         function calculate() {
             //계산 결과를 보여준다.
             //toFixed(2): 소수점 두자리까지만 출력
-            span.textContent = (currentval * transval).toFixed(2);    
+            span.textContent = (currentVal * transVal).toFixed(2);    
         }
 
         select.addEventListener('change',function(e){
             const options = e.currentTarget.options
             const index = e.currentTarget.options.selectedIndex
-            transval = Number(options[index].value) /* 선택한 select 박스의 value값 가져오기*/
+            transVal = Number(options[index].value) /* 선택한 select 박스의 value값 가져오기*/
             calculate();
         })
 
         input.addEventListener('keyup', function(e){
             //입력받은 값을 가져온다.
             //계산을 한다
-            currnetval = Number(e.currentTarget.value)
+            currnetVal = Number(e.currentTarget.value)
+            console.log(currentVal)
             calculate();
         })
     </script>

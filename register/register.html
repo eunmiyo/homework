@@ -52,6 +52,16 @@
                     <span class="alert_msg reg_email">이메일 형식이 일치하지 않습니다.</span>
                 </li>
                 <li>
+                    <label for="gender">성별</label>
+                    <select class="must_gen" name="gender" id="gender">
+                        <option value="gender1">성별</option>
+                        <option value="woman">여자</option>
+                        <option value="man">남자</option>
+                        <option value="gender2">선택안함</option>
+                        <span class="alert_msg must_gender">필수 선택 입니다.</span>
+                    </select>
+                </li>
+                <li>
                     <label for="tel">연락처</label>
                     <input type="tel" id="tel" name="tel" maxlength="13" autocapitalize="off" >
                     <span class="alert_msg reg_tel">전화번호 형식이 일치하지 않습니다.</span>
@@ -59,7 +69,7 @@
             </ul>
         </fieldset>
         <fieldset>
-            <button type="subimt" id="submit_button">제출</button>
+            <button type="button" id="submit_button">제출</button>
         </fieldset>
     </form>
     <script src="./register.js"></script>

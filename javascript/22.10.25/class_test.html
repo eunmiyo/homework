@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체생성:클래스</title>
+</head>
+<body>
+    <!-- es6에서 객체를 생성하는 class 방법 -->
+
+    <script>
+        // 속성 + 메소드
+        class Pet { /* constructor: 생성자 함수 */
+            constructor(nameVal, ageVal, dogVal){
+
+            this.name = nameVal ;
+            this.age = ageVal;
+            this.dog = dogVal;
+            }
+        }
+
+        const pet = new Pet('구름', 7, '비숑');
+        console.log(pet.name);
+        console.log(pet.age);
+        console.log(pet.dog);
+
+    </script>
+</body>
+</html>
