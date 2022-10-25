@@ -151,14 +151,14 @@ function telConfirm(){
     return true;
 }
 
-// function genderConfirm() {
-//     const mustGender = document.querySelector('.must_gender');
+function genderConfirm() {
+    const mustGender = document.querySelector('.must_gender');
     
-//     if (!gender.value){ /* userid가 빈문자열이라면 실행 */
-//         mustGneder.style.display = "block"
-//         return false;
-//     } else
-// }
+    if (gender.value == gender1){ 
+        mustGender.style.display = "block";
+        return true;
+    } 
+}
 
 
 // 중복된 아이디 체크
