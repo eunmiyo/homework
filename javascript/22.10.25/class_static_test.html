@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>객체생성:클래스</title>
+    <title>class_static</title>
 </head>
 <body>
-    <!-- es6에서 객체를 생성하는 class 방법 -->
-
     <script>
         // 속성 + 메소드
-        class Pet { /* constructor: 생성자 함수 */
+        class Pet {
+            // static: 정적 속성
+            static color = 'black'
             constructor(nameVal, ageVal, dogVal){
             // 속성
-            this.name = nameVal ;
+            this.name = nameVal;
             this.age = ageVal;
             this.dog = dogVal;
             }
@@ -31,18 +31,14 @@
             dogPrint () {
                 console.log(`${this.name}(이)의 나이는 ${this.age}살이고 종류는 ${this.dog}입니다.`)
             }
+
+            static colorPrint (){ /* static 정적메소드, */
+                console.log(`${this.color}입니다`)
+            }
         }
 
-        const pet = new Pet('구름', 7, '비숑');
-        const pet2 = new Pet('룽지', 4, '푸들');
-
-        pet.eat('고구마');
-        pet.agePrint();
-        pet.dogPrint();
-
-        pet2.eat('간식');
-        pet2.agePrint();
-        pet2.dogPrint();
+        console.log(Pet.color);
+        console.log(Pet.colorPrint());
 
     </script>
 </body>
