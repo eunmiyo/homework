@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('./common.css');
+@import url('../css/common.css');
 
 .wrap{
 	background: wheat;
@@ -121,15 +121,10 @@ section .con {
 	display: block;
 }
 
-/* .sns__content > ul {
-	display: flex;
-	flex-direction: row;
+.content__list > li > a > .fa-brands {
+	font-size: 3rem;
+	color: white;
 }
-
-.sns__content > ul > li {
-	flex: 1;
-	text-align: center;
-} */
 
 .guide{
 	height: 480px;
@@ -137,9 +132,7 @@ section .con {
 
 .guide__content {
 	display: flex;
-	/* flex-direction: row; */
 	flex-direction: column;
-	/* background: yellowgreen; */
 }
 
 .guide__content > div {
@@ -230,9 +223,9 @@ section .con {
 	background-image: url(../img/bg_home_cs.png);
 	background-size: cover;
 	background-position:center;
-	color: white;
 	display: flex;
 	flex-direction: column;
+	color: white;
 }
 
 .banner__content > .order-text {
@@ -250,12 +243,103 @@ section .con {
 		padding-top: 120px;
 	}
 
+	.guide {
+		height: 380px;
+	}
+
 	.guide__content {
 		flex-direction: row;
 	}
 
+	.guide__content > .content__delivery {
+		background-size: 120% 100%;
+	}
+
+	.store{
+		height: 597px;
+	}
+
+	.store__content > .search {
+		padding: 140px 5px;
+	}
+
+	.store__content > .search > h2 {
+		font-size: 3rem;
+		margin-bottom: 20px;
+	}
+
+	.store__content > .search > ul li {
+		width: 16.45%;
+		border-right: 1px solid rgb(209, 209, 209);
+	}
+
+	.store__content > .search > ul li:last-child {
+		border-right: none;
+	}
+
+	/* .store__content > .search > ul {
+		width: 79.44%;
+		margin: 0 auto;
+	} */
+
+	.store__content > .search > ul li > img {
+		width: 90px;
+	}
+
+	.store__content > .search > ul li > .search-txt {
+		display: block;
+		margin: 15px 0;
+	}
+
+	.store__content > .search > ul li > em {
+		font-size: 1.4rem;
+	}
+
 	.store__content ul li {
 		width: 16.66%;
+	}
+
+	.content__list > li > a > .icon {
+		font-size: 5rem;
+		padding-right: 10px;
+	}
+
+	.content__list > li > a > .sns-txt {
+		text-align: left;
+	}
+
+	.banner__content {
+		flex-direction: row;
+	}
+
+	.banner__content > .order-text {
+		/* 630px ÷ 1140px */
+		width: 55.26%;
+		/* 50px ÷ 1140px */
+		padding: 0 0 0 4.38%;
+	}
+
+	.banner__content > .order-text > h1 {
+		font-size: 2.3rem;
+		padding-top: 60px;
+	}
+
+	.banner__content > .order-text > p {
+		font-size: 1.3rem;
+		display: inline;
+	}
+
+	.banner__content > .order-text > p:nth-of-type(2):before {
+		content: '/ ';
+	}
+
+	.banner__content > .phone {
+		/* 410px ÷ 1140px */
+		width: 36.96%;
+		/* 50px ÷ 1140px */
+		padding-right: 4.38% ;
+		padding-top: 75px;
+		text-align: center;
 	}
 
 	.slider__content .mySwiper {
@@ -285,104 +369,10 @@ section .con {
 		align-items: center;
 	}
 
-	.content__list > li > a > .icon {
-		font-size: 5rem;
-		padding-right: 10px;
-	}
-	
-	.content__list > li > a > .sns-txt {
-		text-align: left;
-	}
-
-	.store{
-		height: 597px;
-	}
-
-	.store__content > .search {
-		padding: 140px 5px;
-	
-	}
-
-	.store__content > .search > h2 {
-		font-size: 3rem;
-		margin-bottom: 20px;
-	}
-
-	.store__content > .search > ul li {
-		width: 16.45%;
-		border-right: 1px solid rgb(209, 209, 209);
-	}
-
-	.store__content > .search > ul li:last-child {
-		border-right: none;
-	}
-
-	.store__content > .search > ul {
-		width: 79.44%;
-		margin: 0 auto;
-	}
-
-	.store__content > .search > ul li > img {
-		width: 90px;
-	}
-
-	.store__content > .search > ul li > .search-txt {
-		display: block;
-		margin: 15px 0;
-	}
-
-	.store__content > .search > ul li > em {
-		font-size: 1.4rem;
-
-	}
-
-	.banner__content {
-		flex-direction: row;
-	}
-
-	.banner__content > .order-text {
-		/* 630px ÷ 1140px */
-		width: 55.26%;
-		/* 50px ÷ 1140px */
-		/* padding-left: 4.38%; */
-		padding: 0 0 0 4.38%;
-	}
-
-	.banner__content > .order-text > h1 {
-		font-size: 2.3rem;
-		padding-top: 60px;
-	}
-
-	.banner__content > .order-text > p {
-		font-size: 1.3rem;
-		display: inline;
-	}
-
-	.banner__content > .order-text > p:nth-of-type(2):before {
-		content: '/ ';
-	}
-
-	.banner__content > .phone {
-		/* 410px ÷ 1140px */
-		width: 36.96%;
-		/* 50px ÷ 1140px */
-		padding-right: 4.38% ;
-		padding-top: 75px;
-		text-align: center;
-	}
-
 }
 
 /* pc: 1024px 이상 */
 @media all and (min-width:1024px){ 
-	.guide {
-		height: 380px;
-	}
-
-	.guide__content > .content__delivery {
-		background-size: cover;
-	}
-	
 	.slider__content .mySwiper {
 		height: 480px;
 	} 
