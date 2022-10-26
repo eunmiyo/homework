@@ -96,7 +96,7 @@
 	margin-bottom: 100px;
 }
 
-.header__Mnav > .Mmenu__main > li {
+.header__Mnav > .Mmenu__main > li { 
 	padding: 20px 0;
 	border-bottom: 1px solid rgb(209, 209, 209);
 	position: relative;
