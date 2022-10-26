@@ -108,4 +108,6 @@ body {
 
 select {
     font-size: 15px;
+    border-color: red;
+    width: 200px;
 }

@@ -47,13 +47,14 @@ table {
 	border-spacing: 0;
 }
 
-a {
-    text-decoration: none !important;
-    color: black;
+/* haseo: 추가 */
+a { 
+    text-decoration: none !important; 
+	color: black;
 }
 
 header, footer, section {
-    box-sizing: border-box;
+	box-sizing:border-box;
 }
 
 iframe {

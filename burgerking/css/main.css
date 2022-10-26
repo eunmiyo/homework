@@ -1,108 +1,118 @@
-section .con {
-    max-width: 1440px;
-    margin: 0 auto;
-    height: 100%;
+@charset "utf-8";
+@import url('./common.css');
+
+.wrap{
+	background: wheat;
 }
 
-.slider {
-    height: 480px;
+section .con {
+	max-width: 1440px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.slider{
+	height: 480px;
 }
 
 .slider__content {
-    background: thistle;
+	background: thistle;
 }
 
-.youtube {
-    height: 605px;
+.youtube{
+	height: 605px;
 }
 
 .youtube__content {
-    background: tomato;
+	background:tomato;
 }
 
-.sns {
-    height: 160px;
+.sns{
+	height: 160px;
 }
 
 .sns__content {
-    background: turquoise;
+	background: turquoise;
 }
 
 .sns__content > ul {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .sns__content > ul > li {
-    flex: 1; /* 1대1 비율 */
-    text-align: center;
+	flex: 1;
+	text-align: center;
 }
 
-.guide {
-    height: 480px;
+.guide{
+	height: 480px;
 }
 
 .guide__content {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	/* flex-direction: row; */
+	flex-direction: column;
+	/* background: yellowgreen; */
 }
 
 .guide__content > div {
-    flex: 1;
-    text-align: center;
+	flex: 1;
+	text-align: center;
 }
 
 .guide__content > .content__app {
-    background: hotpink;
+	background: hotpink;
 }
 
 .guide__content > .content__delivery {
-    background: indianred;
+	background:indianred;
 }
 
-.store {
-    height: 597px;
+.store{
+	height: 597px;
 }
 
 .store__content {
-    background: honeydew;
+	background: honeydew;
 }
 
 .store__content ul {
-    /* float를 쓰면 부모태그에 overflow을 줘야한다. */
-    overflow: hidden;
-    width: 79.44%; /* 1144 ÷ 1440 */
-    margin: 0 auto;
+	/* display: flex;
+	flex-direction: row;
+	justify-content: space-around; */
+	overflow: hidden;
+	/* 1144 ÷ 1440 */
+	width: 79.44%;
+	margin: 0 auto;
 }
 
 .store__content ul li {
-    float: left;
-    width: 33.33%;
-    text-align: center;
+	float: left;
+	width: 33.33%;
+	text-align: center;
 }
 
-.banner {
-    height: 200px;
+.banner{
+	height: 200px;
 }
 
 .banner__content {
-    background: gray;
+	background: gray;
 }
 
-/* 모바일 767 ~ 1023px */
+/* 테블릿: 767px 이상*/
+@media all and (min-width:767px){
+	.guide__content {
+		flex-direction: row;
+	}
 
-@media all and (min-width:767px) {
-    .guide__content{
-        flex-direction: row;
-    }
-    
-    .store__content ul li {
-        width: 16.66%;
-    }
+	.store__content ul li {
+		width: 16.66%;
+	}
 }
 
-/* pc 1024px 이상 */
+/* pc: 1024px 이상 */
+@media all and (min-width:1024px){ 
 
-@media all and (min-width:1024px){
-    
 }
