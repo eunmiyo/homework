@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 편집 메소드</title>
+
+</head>
+<body> 
+    <div id="wrap">
+        <h1>제목</h1>
+        <p>내용1</p>
+        <p>내용2</p>
+        <p>내용3</p>
+    </div>
+    <div id="wrap2">
+        <h1>제목</h1>
+    </div>
+    <!-- jquery 위에 위치해야함 -->
+    <script src="./jquery-3.6.1.min.js"></script>
+    
+    <script>
+        // $(function(){ /* eq(인덱스번호) after: 이후, before: 이전 */
+        //     $("#wrap p:eq(2)").after("<p>After</p>");
+        //     $("#wrap p:eq(1)").before("<p>Before</p>");
+        // });
+
+        // $(function(){ /* eq(인덱스번호) after: 이후, before: 이전 */
+        //     $("<p>After</p>").insertAfter("#wrap p:eq(2)");
+        //     $("<p>Before</p>").insertBefore("#wrap p:eq(1)");
+        // });
+
+        // $(function(){ /* eq(인덱스번호) after: 이후, before: 이전 */
+        //     $("#wrap").append("<p>내용4</p>"); /* 내가 선택한 요소에서 뒤에 갖다 붙임 */
+        //     $("#wrap").prepend("<p>내용0</p>"); /* 내가 선택한 하위요소에서 앞에다 갖다 붙임 */
+        // });
+
+        // $(function(){ 
+        //     $("<p>내용4</p>").appendTo("#wrap"); 
+        //     $("<p>내용0</p>").prependTo("#wrap"); 
+        // });
+
+        // $(function(){ 
+        //     // console.log($("#wrap").children().clone()); 
+        //     var copy = $('#wrap').children().clone();
+        //     $('#wrap2').append(copy);
+        // });
+
+        // $(function(){ 
+        //     $('#wrap').remove(); /* 전체 지우기 */
+        //     // $('#wrap').empty(); /* 하위 지우기 */
+        // });
+
+        $(function(){ 
+            // $('h1').replaceWith("<h3>헤더바꿈</h3>"); /* replaceWith: 바꿔주기 */
+            $('<h3>헤더바꿈</h3>').replaceAll("h1");
+        });
+
+    </script>
+</body>
+</html>

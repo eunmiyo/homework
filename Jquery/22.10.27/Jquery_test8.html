@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 편집 메소드</title>
+
+</head>
+<body> 
+    <h1>
+        <strong>객체 조작</strong>
+    </h1>
+    <p class="ct1">내용1</p>
+    <p class="ct1">내용2</p>
+    <p class="ct2">내용3</p>
+    <p class="ct2">내용4</p>
+
+    <ul>
+        <li>내용5</li>
+        <li>내용6</li>
+    </ul>
+
+    <!-- jquery 위에 위치해야함 -->
+    <script src="./jquery-3.6.1.min.js"></script>
+    
+    <script>
+
+        $(function(){ 
+            $("strong").unwrap(); /* 감싸고 있는 부모태그를 없애줌 */
+            $(".ct1").wrap("<div />"); /* <div> 하나씩 감싼다 */
+            $(".ct2").wrapAll("<div />"); /*<div> 다 같이 감싼다. */
+            $("li").wrapInner("<h3 />"); /* <li>안에 있는 요소들을 감싸서 바꿔준다 */
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery 속성 조작</title>
+    <style>
+        .aqua {background-color: aqua}
+        .red {background-color: red}
+        .green {background-color: green}
+        .yellow {background-color: yellow}
+    </style>
+</head>
+<body> 
+    <div>
+        <ul class="list_1">
+            <li class="list_1">
+                <span class="child1">1번</span>
+                <span>2번</span>
+                <span class="child3">3번</span>
+                <span>4번</span>
+                <span class="child5">5번</span>
+            </li>
+            <li id="list_2">리스트2</li>
+            <li id="list_3">리스트3</li>
+        </ul>
+        <a href="https://www.naver.com/" target="_blank">클릭</a>
+        <p>안녕하세요. 안녕히가세요.</p>
+    </div>
+    <!-- jquery 위에 위치해야함 -->
+    <script src="./jquery-3.6.1.min.js"></script>
+    
+    <script>
+        // $(function(){
+        //   var result = $(".list_1").html();
+        //   console.log(result);
+        //   $(".list_1").html("<a href='#'>클릭</a>");
+        // });
+
+        // $(function(){
+        //     var result1 = $('list_1').text();
+        //     console.log(result1)
+        //     $("list_1").text("<a href='#'>클릭</a>");
+        // });
+
+        // $(function(){
+        //     // console.log($("a").attr("href"));
+        //     // console.log($("a").attr("target"));
+        //     $("a").attr('href', "https://ezenac.co.kr/");
+        //     $("a").attr({
+        //         'href': "https://ezenac.co.kr/",
+        //         "target": "_parent"
+        //     });
+        //     // $('a').removeAttr("target");
+        // });
+
+        // $(function(){
+        //     $('p').addClass('aqua');
+        // });
+
+        // $(function(){
+        //     $("p").removeClass("red");
+        // });
+
+        $(function(){ /* toggleClass: 있으면 없게하고, 없으면 있게함 */
+            // $('p').toggleClass('green');
+            console.log($('p').hasClass("green"));
+        });
+    </script>
+</body>
+</html>
