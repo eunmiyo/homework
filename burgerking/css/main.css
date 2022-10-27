@@ -121,7 +121,7 @@ section .con {
 	display: block;
 }
 
-.content__list > li > a > .fa-brands {
+.content__list > li > a > .fa- {
 	font-size: 3rem;
 	color: white;
 }
