@@ -2,6 +2,7 @@
 
 * {
     margin: 0 auto;
+    padding: 0;
 }
 
 a {
@@ -15,6 +16,11 @@ ul {list-style: none;}
 body {
     font-size: 20px;
     color: black;
+}
+
+img{
+    width: 82px;
+    height: 42px;
 }
 
 .header_wrap {
@@ -99,17 +105,10 @@ body {
 
 .header_nav {
     height: 100px;
-    padding-top: 36px;
+    padding-top: -40px;
 }
 
-.header_nav > .header_logo {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    height: 63px;
-}
-
-.header_nav > .header_search {
+.header_search {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -117,20 +116,30 @@ body {
     justify-content: space-between;
     position: absolute;
     left: 325px;
+    top: 40px;
     width: 400px;
     height: 48px;
+    padding-left: 14px;
     border: 1px solid purple;
     border-radius: 6px;
     background-color: white;
 }
 
 .header_search .header_input {
-    width: 300px;
+    width: 400px;
     background-color: inherit;
     border: none;
     outline: none;
     font-size: 16px;
     letter-spacing: -0.33px;
+}
+
+.header_search > .header_x {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    bottom: 3px;
 }
 
 .header_search > .header_bt {
@@ -145,15 +154,14 @@ body {
 }
 
 .header_menu_wrap {
-    min-width: 1050px;
+    /* min-width: 1050px; */
     letter-spacing: -0.3px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     position: relative;
-    box-shadow: rgb(0 0 0 / 7%) 0px 3px 4px 0px;
     width: 100%;
 }
 
-/* .header_menu_wrap > .header_menu {
+.header_menu_wrap > .header_menu {
     position: relative;
     display: flex;
     -webkit-box-pack: justify;
@@ -207,7 +215,7 @@ body {
     font-weight: 500;
     color: rgb(51, 51, 51);
     cursor: pointer;
-} */
+}
 
 
 
