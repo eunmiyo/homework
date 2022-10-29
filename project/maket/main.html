@@ -6,13 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인페이지</title>
     <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <div>
-        <h1>logo</h1>
-        <input type="text">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        
+    <div class="header_wrap">
+        <div class="header">
+            <div class="header_left">
+                <a href="#" class="sign">회원가입</a>
+                <div class="bar"></div>
+                <a href="#">로그인</a>
+                <div class="bar"></div>
+                <a href="#" class="center">고객센터 <i class="fa-solid fa-caret-down"></i></a>
+            </div>
+            <div class="header_nav">
+                <div class="header_logo">
+                    <img src="./img/logo.jpg" alt="MARKET">
+                </div>
+                <div class="header_search">
+                    <input type="text" class="header_input" placeholder="검색어를 입력해주세요" required>
+                    <button aria-label="submit" class="header_bt"><i class="fa-solid fa-magnifying-glass"></i></button>                    
+                </div>
+            </div>
+        </div>
+            <div class="header_menu_wrap">
+                <div class="header_menu">
+                    <div class="header_menu2">
+                            <span><i class="fa-solid fa-bars"></i></span>
+                            <span class="header_menu_Kategorie">카테고리</span>
+                    </div>
+                        <ul class="header_menu3">
+                            <li class="header_menu_list"><span class="header_menu_span">신상품</span></li>
+                            <li class="header_menu_list"><span class="header_menu_span">베스트</span></li>
+                            <li class="header_menu_list"><span class="header_menu_span">알뜰쇼핑</span></li>
+                            <li class="header_menu_list"><span class="header_menu_span">특가/혜택</span></li>
+                        </ul>
+                </div>
+            </div>
+    </div>
+
         
     </div>
 </body>
