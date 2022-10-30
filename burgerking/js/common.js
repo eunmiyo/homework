@@ -3,7 +3,7 @@
 const menu = document.querySelector('.menu__main'); /* 전체메뉴 */
 const subMenus = document.querySelectorAll('.list__drop'); /* 하위메뉴 */
 const panel = document.querySelector('.header__panel'); /* 하위 메뉴 나올 때 나오는 판넬 */
-const header = document.querySelector('.header'); /* 전체 헤더 */
+const header = document.querySelector('.header_wrap'); /* 전체 헤더 */
 
 // 메뉴에 마우스 오버시 하위메뉴 보여줌
 menu.addEventListener('mouseover', function() {
