@@ -14,19 +14,3 @@ var swiper = new Swiper(".mySwiper", {
     },
     speed: 800
   });
-
-  var swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 4,
-    spaceBetween: 20,
-    slidesPerGroup: 4,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination2",
-      clickable: true
-    },
-    navigation: {
-      nextEl: ".swiper-button-next2",
-      prevEl: ".swiper-button-prev2"
-    }
-  });
