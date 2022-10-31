@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../animate/animate.min.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
+<body onload="InitializeStaticMenu()">
     <div class="header_wrap">
         <div class="header">
             <div class="header_left">
@@ -37,8 +37,8 @@
 
                 </div>
                     <div class="header_search">
-                        <input type="text" class="header_input" id="search_id" onkeypress="seachID();" placeholder="검색어를 입력해주세요" required>
-                        <button type="button" class="header_x" id="search_x" style="display:none; cursor: pointer;" onclick="searchClear();"><img src="../img/x.png" alt="오류"></button>
+                        <input type="text" class="header_input" id="search_id" onkeypress="searchID();" placeholder="검색어를 입력해주세요">
+                        <button type="button" class="header_x" id="search_x" style=" cursor: pointer;" onclick="searchClear();"><img src="../img/x.png" alt="오류"></button>
                         <button type="submit" class="header_bt" onclick="alert_mag()"><i class="fa-solid fa-magnifying-glass"></i></button>                    
                     </div>
             </div>
@@ -139,25 +139,28 @@
                             <img src="../img/3-5.png" alt="상품이미지">
                         </div>
                         <div class="best_menu">
-                            <a href="#" onclick="alert_mag()">
-                                <span >인기메뉴 TOP50 전체보기</span>
+                            <a href="#">
+                                <span onclick="alert_mag()" >인기메뉴 TOP50 전체보기</span>
                             </a>
                         </div>
             </div>
         </div>
    
     </div>
-
-    <div class="mouse_move">
-        <div class="move_small">
+        <div class="move_small" id="STATICMENU">
             <img src="../img/small.png" alt="작은이미지">
-            <button type="button" onclick="alert_mag()">등급별 혜택</button>
-            <button type="button" onclick="alert_mag()">레시피</button>
+            <table>
+                <tr>
+                    <td onclick="alert_mag()">등급별 혜택</td>
+                </tr>
+                <tr>
+                    <td onclick="alert_mag()">레시피</td>
+                </tr>
+            </table>
         </div>
-    </div>
 
-    <div class="bt_move_up">
-        <button type="button" onclick="movetop();"><img src="../img/upload (1).png" alt="UP"></button>
+    <div class="bt_move_up" onclick="movetop()">
+        <button type="button"><img src="../img/upload (1).png" alt="UP"></button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="../js/main.js"></script>

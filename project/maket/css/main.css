@@ -97,15 +97,10 @@ a {
 }
 
 .header_search {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
     position: absolute;
     left: 330px;
     top: 40px;
-    width: 450px;
+    width: 400px;
     height: 48px;
     padding-left: 14px;
     border: 1px solid purple;
@@ -114,7 +109,8 @@ a {
 }
 
 .header_input {
-    width: 380px;
+    padding-top: 16px;
+    width: 280px;
     background-color: inherit;
     border: none;
     outline: none;
@@ -130,12 +126,14 @@ a {
 }
 
 .header_search img {
+    margin-left: 22px;
+    padding-top: 3px;
     width: 20px;
     height: 20px;
 }
 
 .header_search > .header_bt {
-    position: relative;
+    float: right;
     width: 30px;
     height: 30px;
     margin: 10px;
@@ -197,12 +195,13 @@ a {
     width: 20px;
     height: 20px;
 }
+.header_menu3  {
+    display: flex;
+}
 
 .header_menu3 > .header_menu_list {
     width: 150px;
-    height: 55px;
-    padding: 10px 30px;
-    text-align: center;
+    height: 31px;
     font-size: 18px;
 }
 
@@ -466,7 +465,6 @@ text-align: center;
     .bt_move_up button {
         border: none;
         background: none;
-        float: right;
     }
 
     .bt_move_up img {
@@ -474,27 +472,38 @@ text-align: center;
         height: 50px;
     }
 
-    .move_small {
-        float: right;
-        padding-right: 10px;
-    }
-
     .move_small img {
         width: 90px;
     }
 
-    .move_small button {
-        border: 1px solid rgb(217, 217, 217);
-        background: rgb(255, 255, 255);
+    .move_small table {
         width: 90px;
-        height: 30px;
+        border: 1px solid rgb(217, 217, 217);
+        border-collapse: collapse;
+        font-size: 14px;
         cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 12px;
-        margin: auto;
     }
+
+    table tr td {
+        border: 1px solid rgb(217, 217, 217);
+        padding: 5px;
+        text-align: center;
+    }
+
+    #STATICMENU {
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .bt_move_up{
+        top: 90%;
+        left: 96%;
+        position: fixed;
+    }
+
 
 
 
