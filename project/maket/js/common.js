@@ -34,7 +34,7 @@ function dispToggle(objId) {
   }
 
   function searchClear() {
-    //x 표시 눌렀을 때 지워줘
+    //x 표시 눌렀을 때 지워
     var objId = 'search_id';
     var obj = document.querySelector('#'+objId);
     //var obj = document.getElementById(objId);
