@@ -16,16 +16,16 @@
             <div class="header_left">
                 <a href="#" class="sign">회원가입</a>
                 <div class="bar"></div>
-                <a href="#" class="login">로그인</a>
+                <a href="#" class="login" onclick="alert_mag()">로그인</a>
                 <div class="bar"></div>
                 <div class="center" onmouseover="dispShow('Submenu');">
-                    <a href="#" class="client" >고객센터 
+                    <a href="#" class="client" onclick="alert_mag()" >고객센터 
                     <i class="fa-solid fa-caret-down" ></i></a>
                     <div class="menu_list" id="Submenu" style="display: none; z-index: 1;" onmouseover="dispShow('Submenu');" onmouseout="dispHidden('Submenu');">
-                        <div class="center_list">공지사항</div>
+                        <div class="center_list" onclick="alert_mag()">공지사항</div>
                         <div class="center_list">자주하는 질문</div>
-                        <div class="center_list">1:1 문의</div>
-                        <div class="center_list">대량주문 문의</div>
+                        <div class="center_list" onclick="alert_mag()">1:1 문의</div>
+                        <div class="center_list" onclick="alert_mag()">대량주문 문의</div>
                     </div>
                 </div>
             </div>
@@ -38,36 +38,36 @@
                 </div>
                     <div class="header_search">
                         <input type="text" class="header_input" id="search_id" onkeypress="seachID();" placeholder="검색어를 입력해주세요" required>
-                        <button type="button" class="header_x" id="search_x" style="display:none; cursor: pointer;" onclick="searchClear();"><i class="fa-sharp fa-solid fa-circle-xmark"></i></button>
-                        <button type="submit" class="header_bt"><i class="fa-solid fa-magnifying-glass"></i></button>                    
+                        <button type="button" class="header_x" id="search_x" style="display:none; cursor: pointer;" onclick="searchClear();"><img src="../img/x.png" alt="오류"></button>
+                        <button type="submit" class="header_bt" onclick="alert_mag()"><i class="fa-solid fa-magnifying-glass"></i></button>                    
                     </div>
             </div>
         </div>
             <div class="header_menu_wrap">
                 <div class="header_menu">
                     <div class="header_menu2">
-                            <span onmouseover="dispShow('main_menu');" style="cursor: pointer;"><i class="fa-solid fa-bars"></i></span>
-                            <a href="#" class="header_menu_Kategorie">카테고리</a>
+                            <span onmouseover="dispShow('main_menu');" style="cursor: pointer;"><img src="../img/menu.png" alt="menu"></span>
+                            <a href="#" class="header_menu_Kategorie" onclick="alert_mag()">카테고리</a>
                             <div class="header_main_menu" id="main_menu" style="display: none; z-index: 999;" onmouseover="dispShow('main_menu');" onmouseout="dispHidden('main_menu');">
-                                <div onmouseover="dispShow('sub_menu');"><i class="fa-regular fa-gift"></i>선물하기</div>
-                                <div onmouseover="dispHidden('sub_menu');"><i class="fa-light fa-crate-apple"></i>과일·견과·쌀</div>
-                                <div onmouseover="dispHidden('sub_menu');"><i class="fa-thin fa-croissant"></i>베이커리·치즈·델리</div>
-                                <div onmouseover="dispHidden('sub_menu');"><i class="fa-light fa-plate-utensils"></i>주방용품</div>
-                                <div onmouseover="dispHidden('sub_menu');"><i class="fa-thin fa-washing-machine"></i>가전제품</div>
+                                <div onmouseover="dispShow('sub_menu');"><img src="../img/giftbox.png" alt="오류"> 선물하기</div>
+                                <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()"><img src="../img/fruit.png" alt="오류"> 과일·견과·쌀</div>
+                                <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()"><img src="../img/bread.png" alt="오류"> 베이커리·치즈·델리</div>
+                                <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()"><img src="../img/restaurant.png" alt="오류"> 주방용품</div>
+                                <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()"><img src="../img/household.png" alt="오류"> 가전제품</div>
                             </div>
                             <div class="header_sub_menu" id="sub_menu" style="display: none; z-index: 999;" onmouseover="dispShow('main_menu'); dispShow('sub_menu');" onmouseout="dispHidden('main_menu'); dispHidden('sub_menu');">
-                                <div>홍삼·즙</div>
-                                <div>건강식품</div>
-                                <div>베이커리·커피·차</div>
-                                <div>뷰티·향수·꽃</div>
-                                <div>리빙·생활·유아동</div>
+                                <div onclick="alert_mag()">홍삼·즙</div>
+                                <div onclick="alert_mag()" >건강식품</div>
+                                <div onclick="alert_mag()">베이커리·커피·차</div>
+                                <div onclick="alert_mag()">뷰티·향수·꽃</div>
+                                <div onclick="alert_mag()">리빙·생활·유아동</div>
                             </div>
                     </div>
                         <div class="header_menu3">
-                            <a href="#" class="header_menu_list">신상품</a>
-                            <a href="#" class="header_menu_list" >베스트</a>
-                            <a href="#" class="header_menu_list">알뜰쇼핑</a>
-                            <a href="#" class="header_menu_list">특가/혜택</a>
+                            <a href="#" class="header_menu_list" onclick="alert_mag()">신상품</a>
+                            <a href="#" class="header_menu_list" onclick="alert_mag()" >베스트</a>
+                            <a href="#" class="header_menu_list" onclick="alert_mag()">알뜰쇼핑</a>
+                            <a href="#" class="header_menu_list" onclick="alert_mag()">특가/혜택</a>
                         </div>
                 </div>
             </div>
@@ -95,21 +95,7 @@
                 </div>
                 <section class="slide_2set">
                     <div class="slider_content2">
-                        <div class="swiper2 mySwiper2">
-                            <div class="swiper-wrapper2">
-                                <div class="swiper-slide2 slide2-1 cover"></div>
-                                <div class="swiper-slide2 slide2-2 cover"></div>
-                                <div class="swiper-slide2 slide2-3 cover"></div>
-                                <div class="swiper-slide2 slide2-4 cover"></div>
-                                <div class="swiper-slide2 slide2-5 cover"></div>
-                                <div class="swiper-slide2 slide2-6 cover"></div>
-                                <div class="swiper-slide2 slide2-7 cover"></div>
-                                <div class="swiper-slide2 slide2-8 cover"></div>
-                            </div>
-                            <div class="swiper-button-next2"></div>
-                            <div class="swiper-button-prev2"></div>
-                            <div class="swiper-pagination2"></div>
-                        </div>
+                        
                     </div>
                 </section>
             </div>
@@ -126,21 +112,21 @@
                     <h1>MD 추천</h1>
                 </div>
                     <div class="md_menu">
-                        <button type="button" class="menu_bt">채소</button>
-                        <button type="button" class="menu_bt">과일·견과·쌀</button>
-                        <button type="button" class="menu_bt">샐러드·간편식</button>
-                        <button type="button" class="menu_bt">면·양념·오일</button>
-                        <button type="button" class="menu_bt">정육·계란</button>
-                        <button type="button" class="menu_bt">간식·과자·떡</button>
-                        <button type="button" class="menu_bt">베이커리·치즈·델리</button>
-                        <button type="button" class="menu_bt">건강식품</button>
-                        <button type="button" class="menu_bt">생활용품·리빙·캠핑</button>
-                        <button type="button" class="menu_bt">헤어·바디·구강</button>
-                        <button type="button" class="menu_bt">가전제품</button>
-                        <button type="button" class="menu_bt">선물하기</button>
-                        <button type="button" class="menu_bt">베이비·키즈·완구</button>
-                        <button type="button" class="menu_bt">반려동물</button>
-                        <button type="button" class="menu_bt">주방용품</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">채소</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">과일·견과·쌀</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">샐러드·간편식</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">면·양념·오일</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">정육·계란</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">간식·과자·떡</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">베이커리·치즈·델리</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">건강식품</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">생활용품·리빙·캠핑</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">헤어·바디·구강</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">가전제품</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">선물하기</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">베이비·키즈·완구</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">반려동물</button>
+                        <button type="button" class="menu_bt" onclick="alert_mag()">주방용품</button>
                     </div>
                         <div class="title2">
                             <h1>MARKET 레시피</h1>
@@ -153,30 +139,26 @@
                             <img src="../img/3-5.png" alt="상품이미지">
                         </div>
                         <div class="best_menu">
-                            <a href="#">
+                            <a href="#" onclick="alert_mag()">
                                 <span >인기메뉴 TOP50 전체보기</span>
                             </a>
                         </div>
-
             </div>
         </div>
    
     </div>
 
     <div class="mouse_move">
-        <div class="small_img">
+        <div class="move_small">
             <img src="../img/small.png" alt="작은이미지">
-        </div>
-        <div class="small_bt">
-            <button type="button">등급별 혜택</button>
-            <button type="button">레시피</button>
+            <button type="button" onclick="alert_mag()">등급별 혜택</button>
+            <button type="button" onclick="alert_mag()">레시피</button>
         </div>
     </div>
 
     <div class="bt_move_up">
-        <button type="button" onclick="movetop();"><i class="fa-thin fa-circle-arrow-up"></i></button>
+        <button type="button" onclick="movetop();"><img src="../img/upload (1).png" alt="UP"></button>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/common.js"></script>

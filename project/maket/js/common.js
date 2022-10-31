@@ -45,3 +45,8 @@ function dispToggle(objId) {
   function movetop() {
     window.scrollTo(0, 0);
   }
+
+  function alert_mag() {
+    alert("준비중입니다")
+  }
+
