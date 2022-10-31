@@ -26,28 +26,29 @@ function dispToggle(objId) {
     
     if (val.length > 0) {
         //표시 
-        document.querySelector('#search_x').style.display ="block";
+        document.querySelector('#search_x').style.display = "";
     } else {
         //비표시
-        document.querySelector('#search_x').style.display ="none";
+        document.querySelector('#search_x').style.display = "none";
     }
   }
 
   function searchClear() {
     //x 표시 눌렀을 때 지워
-    var objId = 'search_x';
+    var objId = 'search_id';
     var obj = document.querySelector('#'+objId);
     //var obj = document.getElementById(objId);
     obj.value = "";
-    obj.onkeypress();
+    obj.onkeyup();
   }
 
   function movetop() {
+    console.log(1);
     window.scrollTo(0, 0);
   }
 
   function alert_mag() {
-    alert("준비중입니다")
+    alert("준비중입니다");
   }
 
   var stmnLEFT = 10; // 오른쪽여백
@@ -70,11 +71,14 @@ function dispToggle(objId) {
       stmnScrollAmount : stmnScrollAmount) + 'px';
       stmnRefreshTimer = stmnScrollSpeed;
     }
-      stmnTimer = setTimeout("RefreshStaticMenu();", stmnActivateSpeed);
-    }
-    function InitializeStaticMenu(){
-      document.getElementById('STATICMENU').style.right = stmnLEFT + 'px'; //처음에 오른쪽에 위치
-      document.getElementById('STATICMENU').style.top = document.body.scrollTop + stmnBASE +'px';
-      RefreshStaticMenu();
-    }
+
+    document.getElementById('STATICMENU').style.right = stmnLEFT + (-1 * document.documentElement.scrollLeft) + 'px'; //처음에 오른쪽에 위치
+    stmnTimer = setTimeout("RefreshStaticMenu();", stmnActivateSpeed);
+  }
+
+  function InitializeStaticMenu(){
+    document.getElementById('STATICMENU').style.right = stmnLEFT + 'px'; //처음에 오른쪽에 위치
+    document.getElementById('STATICMENU').style.top = document.body.scrollTop + stmnBASE +'px';
+    RefreshStaticMenu();
+  }
 

@@ -16,10 +16,10 @@
             <div class="header_left">
                 <a href="#" class="sign">회원가입</a>
                 <div class="bar"></div>
-                <a href="#" class="login" onclick="alert_mag()">로그인</a>
+                <a href="javascript:alert_mag();" class="login">로그인</a>
                 <div class="bar"></div>
                 <div class="center" onmouseover="dispShow('Submenu');">
-                    <a href="#" class="client" onclick="alert_mag()" >고객센터 
+                    <a href="javascript:alert_mag();" class="client">고객센터 
                     <i class="fa-solid fa-caret-down" ></i></a>
                     <div class="menu_list" id="Submenu" style="display: none; z-index: 1;" onmouseover="dispShow('Submenu');" onmouseout="dispHidden('Submenu');">
                         <div class="center_list" onclick="alert_mag()">공지사항</div>
@@ -37,9 +37,10 @@
 
                 </div>
                     <div class="header_search">
-                        <input type="text" class="header_input" id="search_id" onkeypress="searchID();" placeholder="검색어를 입력해주세요">
-                        <button type="button" class="header_x" id="search_x" style=" cursor: pointer;" onclick="searchClear();"><img src="../img/x.png" alt="오류"></button>
-                        <button type="submit" class="header_bt" onclick="alert_mag()"><i class="fa-solid fa-magnifying-glass"></i></button>                    
+                        <input type="text" class="header_input" id="search_id" onkeyup="searchID();" placeholder="검색어를 입력해주세요">
+                        <button type="button" class="header_x" id="search_x" style="display: none; cursor: pointer;" onclick="searchClear();"><img src="../img/x.png" alt="오류"></button>
+                        <button type="button" class="header_bt" onclick="alert_mag();"><i class="fa-solid fa-magnifying-glass" onclick="alert_mag()"></i></button>
+                        
                     </div>
             </div>
         </div>
@@ -47,7 +48,7 @@
                 <div class="header_menu">
                     <div class="header_menu2">
                             <span onmouseover="dispShow('main_menu');" style="cursor: pointer;"><img src="../img/menu.png" alt="menu"></span>
-                            <a href="#" class="header_menu_Kategorie" onclick="alert_mag()">카테고리</a>
+                            <a href="javascript:alert_mag();" class="header_menu_Kategorie">카테고리</a>
                             <div class="header_main_menu" id="main_menu" style="display: none; z-index: 999;" onmouseover="dispShow('main_menu');" onmouseout="dispHidden('main_menu');">
                                 <div onmouseover="dispShow('sub_menu');"><img src="../img/giftbox.png" alt="오류"> 선물하기</div>
                                 <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()"><img src="../img/fruit.png" alt="오류"> 과일·견과·쌀</div>
@@ -64,10 +65,10 @@
                             </div>
                     </div>
                         <div class="header_menu3">
-                            <a href="#" class="header_menu_list" onclick="alert_mag()">신상품</a>
-                            <a href="#" class="header_menu_list" onclick="alert_mag()" >베스트</a>
-                            <a href="#" class="header_menu_list" onclick="alert_mag()">알뜰쇼핑</a>
-                            <a href="#" class="header_menu_list" onclick="alert_mag()">특가/혜택</a>
+                            <a href="javascript:alert_mag();" class="header_menu_list">신상품</a>
+                            <a href="javascript:alert_mag();" class="header_menu_list">베스트</a>
+                            <a href="javascript:alert_mag();" class="header_menu_list">알뜰쇼핑</a>
+                            <a href="javascript:alert_mag();" class="header_menu_list">특가/혜택</a>
                         </div>
                 </div>
             </div>
@@ -94,8 +95,22 @@
                     <h1>이 상품 어때요?</h1>
                 </div>
                 <section class="slide_2set">
+                <!-- 멀티슬라이드 만들기 참고 https://www.youtube.com/watch?v=ZRCYz0VkNn4 -->
                     <div class="slider_content2">
-                        
+                        <!-- <ul class="slides">
+                            <li><img src="../img/4-1.png/" alt=""></li>
+                            <li><img src="../img/4-2.png/" alt=""></li>
+                            <li><img src="../img/4-3.png/" alt=""></li>
+                            <li><img src="../img/4-4.png/" alt=""></li>
+                            <li><img src="../img/4-5.png/" alt=""></li>
+                            <li><img src="../img/4-6.png/" alt=""></li>
+                            <li><img src="../img/4-7.png/" alt=""></li>
+                            <li><img src="../img/4-8.png/" alt=""></li>
+                        </ul> -->
+                        <p class="controls">
+                            <span class="prev">prev</span>
+                            <span class="next">next</span>
+                        </p>
                     </div>
                 </section>
             </div>
@@ -139,27 +154,24 @@
                             <img src="../img/3-5.png" alt="상품이미지">
                         </div>
                         <div class="best_menu">
-                            <a href="#">
                                 <span onclick="alert_mag()" >인기메뉴 TOP50 전체보기</span>
-                            </a>
                         </div>
             </div>
         </div>
-   
     </div>
         <div class="move_small" id="STATICMENU">
             <img src="../img/small.png" alt="작은이미지">
             <table>
                 <tr>
-                    <td onclick="alert_mag()">등급별 혜택</td>
+                    <td onclick="alert_mag();">등급별 혜택</td>
                 </tr>
                 <tr>
-                    <td onclick="alert_mag()">레시피</td>
+                    <td onclick="alert_mag();">레시피</td>
                 </tr>
             </table>
         </div>
 
-    <div class="bt_move_up" onclick="movetop()">
+    <div class="bt_move_up" onclick="movetop();">
         <button type="button"><img src="../img/upload (1).png" alt="UP"></button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

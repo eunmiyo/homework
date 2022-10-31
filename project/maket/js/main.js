@@ -14,3 +14,5 @@ var swiper = new Swiper(".mySwiper", {
     },
     speed: 800
   });
+
+  
