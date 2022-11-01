@@ -7,7 +7,6 @@
     <title>메인페이지</title>
     <link rel="stylesheet" href="../fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="../animate/animate.min.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body onload="InitializeStaticMenu()">
@@ -31,30 +30,30 @@
             </div>
             <div class="header_nav">
                 <div class="header_logo">
-                    <a href="../HTML/main.html">
-                        <img src="../img/logo.png" alt="MARKET">
+                    <a href="./main.html">
+                        <img src="../img/icon/logo.png" alt="MARKET">
                     </a>
 
                 </div>
                     <div class="header_search">
                         <input type="text" class="header_input" id="search_id" onkeyup="searchID();" placeholder="검색어를 입력해주세요">
-                        <button type="button" class="header_x" id="search_x" style="display: none; cursor: pointer;" onclick="searchClear();"><img src="../img/x.png" alt="오류"></button>
-                        <button type="button" class="header_bt"><i class="fa-solid fa-magnifying-glass" onclick="alert_mag()"></i></button>
-                        
+                        <button type="button" class="header_x" id="search_x" style="display: none; cursor: pointer;" onclick="searchClear();"><img src="../img/icon/x.png" alt="오류"></button>
+                        <button type="button" class="header_bt"><i class="fa-solid fa-magnifying-glass" onclick="alert_mag()"></i></button>             
                     </div>
             </div>
         </div>
+
             <div class="header_menu_wrap">
                 <div class="header_menu">
                     <div class="header_menu2">
-                            <span onmouseover="dispShow('main_menu');" style="cursor: pointer;"><img src="../img/menu.png" alt="menu"></span>
+                            <span onmouseover="dispShow('main_menu');" style="cursor: pointer;"><img src="../img/icon/menu.png" alt="menu"></span>
                             <a href="javascript:alert_mag();" class="header_menu_Kategorie">카테고리</a>
                             <div class="header_main_menu" id="main_menu" style="display: none; z-index: 999;" onmouseover="dispShow('main_menu');" onmouseout="dispHidden('main_menu');">
-                                <div onmouseover="dispShow('sub_menu');"><img src="../img/giftbox.png" alt="오류"> 선물하기</div>
-                                <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()"><img src="../img/fruit.png" alt="오류"> 과일·견과·쌀</div>
-                                <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()"><img src="../img/bread.png" alt="오류"> 베이커리·치즈·델리</div>
-                                <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()"><img src="../img/restaurant.png" alt="오류"> 주방용품</div>
-                                <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()"><img src="../img/household.png" alt="오류"> 가전제품</div>
+                                <div onmouseover="dispShow('sub_menu');"><img src="../img/icon/giftbox.png" alt="오류"> 선물하기</div>
+                                <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()"><img src="../img/icon/fruit.png" alt="오류"> 과일·견과·쌀</div>
+                                <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()"><img src="../img/icon/bread.png" alt="오류"> 베이커리·치즈·델리</div>
+                                <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()"><img src="../img/icon/restaurant.png" alt="오류"> 주방용품</div>
+                                <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()"><img src="../img/icon/household.png" alt="오류"> 가전제품</div>
                             </div>
                             <div class="header_sub_menu" id="sub_menu" style="display: none; z-index: 999;" onmouseover="dispShow('main_menu'); dispShow('sub_menu');" onmouseout="dispHidden('main_menu'); dispHidden('sub_menu');">
                                 <div onclick="alert_mag()">홍삼·즙</div>
@@ -94,31 +93,31 @@
                 <div class="title">
                     <h1>이 상품 어때요?</h1>
                 </div>
-                <section class="slide_2set">
-                <!-- 멀티슬라이드 만들기 참고 https://www.youtube.com/watch?v=ZRCYz0VkNn4 -->
-                    <div class="slider_content2">
-                        <ul class="slides">
-                            <li><img src="../img/4-1.png/" alt=""></li>
-                            <li><img src="../img/4-2.png/" alt=""></li>
-                            <li><img src="../img/4-3.png/" alt=""></li>
-                            <li><img src="../img/4-4.png/" alt=""></li>
-                            <li><img src="../img/4-5.png/" alt=""></li>
-                            <li><img src="../img/4-6.png/" alt=""></li>
-                            <li><img src="../img/4-7.png/" alt=""></li>
-                            <li><img src="../img/4-8.png/" alt=""></li>
-                        </ul>
+                    <div class="slide_2set">
+                        <!-- 멀티슬라이드 만들기 참고 https://www.youtube.com/watch?v=ZRCYz0VkNn4 -->
+                            <div class="slider_content2">
+                                <ul class="slides">
+                                    <li><img src="../img/product/4-1.png" alt=""></li>
+                                    <li><img src="../img/product/4-2.png" alt=""></li>
+                                    <li><img src="../img/product/4-3.png" alt=""></li>
+                                    <li><img src="../img/product/4-4.png" alt=""></li>
+                                    <li><img src="../img/product/4-5.png" alt=""></li>
+                                    <li><img src="../img/product/4-6.png" alt=""></li>
+                                    <li><img src="../img/product/4-7.png" alt=""></li>
+                                    <li><img src="../img/product/4-8.png" alt=""></li>
+                                </ul>
+                            </div>
+                                <p class="controls">
+                                    <span class="prev">prev</span>
+                                    <span class="next">next</span>
+                                </p>
                     </div>
-                        <p class="controls">
-                            <span class="prev">prev</span>
-                            <span class="next">next</span>
-                        </p>
-                </section>
             </div>
         </div>
 
         <section class="event_img">
             <div class="event_img2">
-                <img src="../img/img04.png" alt="할인정보">
+                <img src="../img/banner/img04.png" alt="할인정보">
             </div>
         </section>
         <div class="md_wrap">
@@ -147,11 +146,11 @@
                             <h1>MARKET 레시피</h1>
                         </div>
                         <div class="cut_img">
-                            <img src="../img/3-1.png" alt="상품이미지">
-                            <img src="../img/3-2.png" alt="상품이미지">
-                            <img src="../img/3-3.png" alt="상품이미지">
-                            <img src="../img/3-4.png" alt="상품이미지">
-                            <img src="../img/3-5.png" alt="상품이미지">
+                            <img src="../img/product/3-1.png" alt="상품이미지">
+                            <img src="../img/product/3-2.png" alt="상품이미지">
+                            <img src="../img/product/3-3.png" alt="상품이미지">
+                            <img src="../img/product/3-4.png" alt="상품이미지">
+                            <img src="../img/product/3-5.png" alt="상품이미지">
                         </div>
                         <div class="best_menu">
                                 <span onclick="alert_mag()" >인기메뉴 TOP50 전체보기</span>
@@ -160,7 +159,7 @@
         </div>
     </div>
         <div class="move_small" id="STATICMENU">
-            <img src="../img/small.png" alt="작은이미지">
+            <img src="../img/product/small.png" alt="작은이미지">
             <table>
                 <tr>
                     <td onclick="alert_mag();">등급별 혜택</td>
@@ -170,12 +169,10 @@
                 </tr>
             </table>
         </div>
-
     <div class="bt_move_up" onclick="movetop();">
-        <button type="button"><img src="../img/upload (1).png" alt="UP"></button>
+        <button type="button"><img src="../img/icon/upload (1).png" alt="UP"></button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/common.js"></script>
 </body>
 </html>

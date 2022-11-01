@@ -276,43 +276,21 @@ a {
 }
 
 .slider_content .slide1  {
-    background: url(../img/img01.png);
+    background: url(../img/banner/img01.png);
     background-size: cover;
 	/*background-position:center;*/
 }
 
 .slider_content .slide2 {
-    background: url(../img/img02.png);
+    background: url(../img/banner/img02.png);
     background-size: cover;
 	/*background-position:center;*/
 }
 
 .slider_content .slide3 {
-    background: url(../img/img03.png);
+    background: url(../img/banner/img03.png);
     background-size: cover;
 	/*background-position:center;*/
-}
-
-.slide_menu {
-    position: relative;
-    width: 800px;
-    height: 592px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.slide_menu .slide_menu2 {
-    width: 1050px;
-    height: 532px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.slides {
-    position: absolute;
-    left: 0; top: 0;
-    list-style: none;
-    width: 1600px;
 }
 
 .slides img {
@@ -320,18 +298,44 @@ a {
     height: 200px;
 }
 
+.slide_menu {
+    position: relative;
+    width: 1900px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.slide_menu .slide_menu2 {
+    width: 1050px;
+    height: 600px;
+}
+
+.slide_2set {
+    height: 520px;
+}
+
+.slider_content2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    position: absolute;
+    left: 0; top: 0;
+    transition: left 0.5s ease-out;
+    list-style: none;
+}
+
 .slides li:not(:last-child){
     float: left;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .controls {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 200px;
 }
 
 .controls span {
-    background: #333;
+    background: purple;
     color: #fff;
     padding: 10px 20px;
     margin: 0 10px;
@@ -345,18 +349,10 @@ a {
     left: calc(100% + 50px);
 }
 
-.controls span {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 10px;
-    top: 50%;
-    /*transform: ;*/
-}
-
 .title h1 {
 text-align: center;
     margin: 0 0 27px;
+    padding-top: 20px;
 }
 
   .event_img {
