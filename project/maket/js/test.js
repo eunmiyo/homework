@@ -82,3 +82,34 @@
 //     RefreshStaticMenu();
 //   }
 
+//  멀티슬라이드 만들기 참고 https://www.youtube.com/watch?v=ZRCYz0VkNn4
+// var slides = document.querySelector('.slides'),
+//   slide = document.querySelectorAll('.slides li'),
+//   currentIdx = 0,
+//   slideCount = slide.length,
+//   prevBtn = document.querySelector('.prev'),
+//   slideWidth = 200,
+//   slideMargin = 10,
+//   nextBtn = document.querySelector('.next');
+
+//   slides.style.width = (slideWidth + slideMargin)*slideCount - slideMargin + 'px';
+
+//   function moveSlide(num){
+//     slides.style.left = -num * 210 + 'px';
+//     currentIdx = num;
+//   }
+  
+//   nextBtn.addEventListener('click', function(){
+//     if(currentIdx < slideCount - 4){
+//       moveSlide(currentIdx + 1);
+//     }
+//   });
+
+//   prevBtn.addEventListener('click', function(){
+//     if(currentIdx > 0){
+//       moveSlide(currentIdx - 1);
+//     } else {
+//       moveSlide(currentIdx - 4);
+//     }
+//   });
+

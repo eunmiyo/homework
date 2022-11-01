@@ -16,34 +16,17 @@ var swiper = new Swiper(".mySwiper", {
   });
 
   // 4컷 슬라이드
-var slides = document.querySelector('.slides'),
-  slide = document.querySelectorAll('.slides li'),
-  currentIdx = 0,
-  slideCount = slide.length,
-  prevBtn = document.querySelector('.prev'),
-  slideWidth = 200,
-  slideMargin = 10,
-  nextBtn = document.querySelector('.next');
 
-  slides.style.width = (slideWidth + slideMargin)*slideCount - slideMargin + 'px';
-
-  function moveSlide(num){
-    slides.style.left = -num * 210 + 'px';
-    currentIdx = num;
-  }
-  
-  nextBtn.addEventListener('click', function(){
-    if(currentIdx < slideCount - 4){
-      moveSlide(currentIdx + 1);
-    }
-  });
-
-  prevBtn.addEventListener('click', function(){
-    if(currentIdx > 0){
-      moveSlide(currentIdx - 1);
-    } else {
-      moveSlide(currentIdx - 4);
-    }
+  var swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 
   // 하위메뉴
