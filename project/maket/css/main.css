@@ -295,9 +295,10 @@ a {
 
 .slide_menu {
     position: relative;
-    width: 1903px;
+    width: 800px;
     height: 592px;
-    margin: o auto;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .slide_menu .slide_menu2 {
@@ -311,11 +312,37 @@ a {
     position: absolute;
     left: 0; top: 0;
     list-style: none;
+    width: 1600px;
+}
+
+.slides img {
+    width: 200px;
+    height: 200px;
 }
 
 .slides li:not(:last-child){
     float: left;
     margin-right: 30px;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.controls span {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.controls span.prev {
+    right: calc(100% + 50px);
+}
+
+.controls span.next {
+    left: calc(100% + 50px);
 }
 
 .controls span {
@@ -429,6 +456,7 @@ text-align: center;
     .bt_move_up button {
         border: none;
         background: none;
+        cursor: pointer;
     }
 
     .bt_move_up img {
