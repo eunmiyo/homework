@@ -349,7 +349,6 @@ a {
 
 .mySwiper2 .slide4 p {
     margin-top: 360px;
-    overflow-block: true;
     font-weight: bold;
 }
 
@@ -362,7 +361,6 @@ a {
 
 .mySwiper2 .slide5 p {
     margin-top: 360px;
-    overflow-block: true;
     font-weight: bold;
 }
 
@@ -375,7 +373,6 @@ a {
 
 .mySwiper2 .slide6 p {
     margin-top: 360px;
-    overflow-block: true;
     font-weight: bold;
 }
 
@@ -388,7 +385,6 @@ a {
 
 .mySwiper2 .slide7 p {
     margin-top: 360px;
-    overflow-block: true;
     font-weight: bold;
 }
 
@@ -401,7 +397,6 @@ a {
 
 .mySwiper2 .slide8 p {
     margin-top: 360px;
-    overflow-block: true;
     font-weight: bold;
 }
 
@@ -414,7 +409,6 @@ a {
 
 .mySwiper2 .slide9 p {
     margin-top: 360px;
-    overflow-block: true;
     font-weight: bold;
 }
 
@@ -427,7 +421,6 @@ a {
 
 .mySwiper2 .slide10 p {
     margin-top: 360px;
-    overflow-block: true;
     font-weight: bold;
 }
 
@@ -440,7 +433,6 @@ a {
 
 .mySwiper2 .slide11 p {
     margin-top: 360px;
-    overflow-block: true;
     font-weight: bold;
 }
 
@@ -530,38 +522,74 @@ a {
 
     .slide_3set {
         width: 1050px;
-        height: 300px;
+        height: 340px;
         padding-top: 10px;
+        padding-bottom: 40px;
     }
 
     .mySwiper3 .slide12 {
         background: url(../img/product/3-1.png);
         background-size: cover;
         background-position:center;
+        height: 300px;
+    }
+
+    .mySwiper3 .slide12 p {
+        margin-top: 320px;
+        text-align: center;
+        font-weight: bold;
     }
 
     .mySwiper3 .slide13 {
         background: url(../img/product/3-2.png);
         background-size: cover;
         background-position:center;
+        height: 300px;
+    }
+
+    .mySwiper3 .slide13 p {
+        margin-top: 320px;
+        text-align: center;
+        font-weight: bold;
     }
 
     .mySwiper3 .slide14 {
         background: url(../img/product/3-3.png);
         background-size: cover;
         background-position:center;
+        height: 300px;
+    }
+
+    .mySwiper3 .slide14 p {
+        margin-top: 320px;
+        text-align: center;
+        font-weight: bold;
     }
 
     .mySwiper3 .slide15 {
         background: url(../img/product/3-4.png);
         background-size: cover;
         background-position:center;
+        height: 300px;
     }
 
-    .mySwiper3 .slide13 {
+    .mySwiper3 .slide15 p {
+        margin-top: 320px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .mySwiper3 .slide16 {
         background: url(../img/product/3-5.png);
         background-size: cover;
         background-position:center;
+        height: 300px;
+    }
+
+    .mySwiper3 .slide16 p {
+        margin-top: 320px;
+        text-align: center;
+        font-weight: bold;
     }
 
     .best_menu {
@@ -576,6 +604,7 @@ a {
         border-radius: 3px;
         border: 1px solid rgb(227, 227, 227);
         cursor: pointer;
+        margin-top: 40px;
     }
 
     /* 휠 따라 이동하는 이미지, 상단이동 버튼 */
