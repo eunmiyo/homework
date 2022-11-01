@@ -320,6 +320,10 @@ a {
     height: 410px;
 }
 
+.swiper .mySwiper2 {
+    padding-top: 20px;
+}
+
 .slide_2set .swiper-button-prev {
     color: purple;
     margin-left: -10px;
