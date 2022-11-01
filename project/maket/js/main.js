@@ -29,6 +29,14 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
+  // 3컷 이미지
+
+  var swiper3 = new Swiper(".mySwiper3", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    centeredSlides: true,
+  });
+
   // 하위메뉴
   function dispToggle(objId) {
     var obj = document.getElementById(objId);
