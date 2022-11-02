@@ -11,6 +11,46 @@ a {
   color: inherit;
 }
 
+/* 상단고정 메뉴 */
+
+.fix_menu3 {
+  margin: 0px;
+}
+
+.fix_submenu_menu img {
+  width: 20px;
+  height: 20px;
+}
+
+.fix_submenu_menu {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  width: 200px;
+  height: 230px;
+  padding: 5px 10px;
+  border: 1px solid purple;
+  background-color: rgb(255, 255, 255);
+}
+
+.fix_submenu_menu div {
+  padding: 10px 10px 10px 0;
+}
+
+.fix_submenu_menu2 {
+  position: absolute;
+  left: 200px;
+  top: 40px;
+  width: 150px;
+  height: 230px;
+  padding: 5px 10px;
+  border: 1px solid purple;
+}
+
+.fix_submenu_menu2 div {
+  padding: 10px 10px 10px 0;
+}
+
 /* 회원가입, 검색창, 카테고리 */
 .header_wrap {
   width: 1903px;
@@ -98,35 +138,35 @@ a {
 }
 
 .header_search {
-  position: absolute;
   left: 330px;
   top: 40px;
   width: 400px;
   height: 48px;
-  padding-left: 14px;
+  /* padding-left: 14px; */
   border: 1px solid purple;
   border-radius: 6px;
   background-color: white;
-  display: flex;
 }
 
 .header_input {
-  width: 400px;
+  margin-top: 16px;
+  width: 280px;
+  height: 20px;
   background-color: inherit;
   border: none;
-  outline: none;
+  /* outline: none; */
   font-size: 16px;
-  margin: 0;
 }
 
 .header_search .header_x {
-  position: relative;
+  /* margin: 10px; */
   border: none;
   background: none;
 }
 
 .header_search img {
-  margin: 0;
+  margin-left: 22px;
+  padding-top: 3px;
   width: 20px;
   height: 20px;
 }
@@ -653,48 +693,28 @@ table tr td {
 .fix_menu {
   width: 1903px;
   height: 60px;
-  background: #fff;
   box-shadow: 2px 2px 10px 2px lightgray;
-  position: fixed;
-  top: 0px;
 }
 
 .fix_menu2 {
   width: 1050px;
   height: 60px;
+  box-sizing: border-box;
+  height: 100%;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.fix_submenu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fix_submenu span {
-  padding: 0 30px;
-}
-
-.fix_submenu span:hover {
-  color: purple;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 .fix_menu3 {
   display: flex;
 }
 
-.fix_menu3:hover {
-  color: purple;
-  cursor: pointer;
+.fix_menu li {
+  list-style: none;
 }
 
-
-/* 카테고리옆에 메뉴이미지 */
 .fix_menu3 img {
   width: 20px;
   height: 20px;
@@ -716,9 +736,8 @@ table tr td {
   margin-left: 5px;
   font-size: 12px;
   border: none;
-  outline: none;
   margin-top: 8px;
-  background-color: inherit;
+  background: rgb(221, 221, 221);
 }
 
 .fix_menu_search .fix_menu_x {
@@ -738,51 +757,27 @@ table tr td {
   cursor: pointer;
 }
 
-/* 상단고정 카테고리 하위메뉴 */
-
-.fix_Kategorie_submenu img {
-  width: 20px;
-  height: 20px;
+.fix_submenu {
+  box-sizing: border-box;
+  margin-left: 150px;
+  height: 100%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.fix_Kategorie_submenu {
-  position: absolute;
-  left: 468px;
-  top: 45px;
-  width: 200px;
-  height: 230px;
-  padding: 5px 10px;
-  border: 1px solid purple;
-  background-color: rgb(255, 255, 255);
+.fix_submenu li {
+  padding: 0 30px;
 }
 
-.fix_Kategorie_submenu div {
-  padding: 10px 10px 10px 0;
-}
-
-.fix_Kategorie_submenu div:hover {
+.fix_submenu li:hover {
   color: purple;
+  text-decoration: underline;
   cursor: pointer;
 }
 
-.fix_Kategorie_submenu2 {
-  position: absolute;
-  left: 668px;
-  top: 45px;
-  width: 150px;
-  height: 230px;
-  padding: 5px 10px;
-  border: 1px solid purple;
-  background-color: rgb(255, 255, 255);
-}
-
-.fix_Kategorie_submenu2 div {
-  padding: 10px 10px 10px 0;
-}
-
-.fix_Kategorie_submenu2 div:hover {
+.fix_menu_Kategorie:hover {
   color: purple;
   cursor: pointer;
 }
-
-

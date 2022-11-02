@@ -1,32 +1,192 @@
-<!-- <div class="fix_submenu_menu"
-              id="main_menu2"
-              style="display: none; "
-              onmouseover="dispShow('main_menu2');"
-              onmouseout="dispHidden('main_menu2');"
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인페이지</title>
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.2.0-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body onload="InitializeStaticMenu()">
+    <div class="fix_menu">
+      <div class="fix_menu2">
+        <div class="fix_menu3">
+          <img
+            src="../img/icon/menu.png"
+            alt="menu"
+            onmouseover="dispShow('Kategorie_menus');"
+            onmouseout="dispHidden('Kategorie_menus');"
+          />
+          <div class="fix_menu_Kategorie">카테고리</div>
+        </div>
+        <div class="fix_submenu">
+          <span>신상품</span>
+          <span>베스트</span>
+          <span>알뜰쇼핑</span>
+          <span>특가/혜택</span>
+        </div>
+
+        <div class="fix_menu_search">
+          <input
+            type="text"
+            class="fix_menu_input"
+            id="fix_menu_id"
+            onkeyup="searchID2();"
+            placeholder="검색어를 입력해주세요"
+          />
+          <img
+            src="../img/icon/x.png"
+            alt="오류"
+            class="fix_menu_x"
+            id="fix_menu_x"
+            style="display: none; cursor: pointer"
+            onclick="searchClear2();"
+          />
+          <i class="fa-solid fa-magnifying-glass" onclick="alert_mag()"></i>
+        </div>
+      </div>
+    </div>
+    <div class="fix_Kategorie_submenu" id="Kategorie_menus" 
+    style="z-index: 10; display: none;" 
+    onmouseover="dispShow('Kategorie_menus');"
+    onmouseout="dispHidden('Kategorie_menus');">
+
+      <div onmouseover="dispShow('Kategorie_submenus');">
+        <img src="../img/icon/giftbox.png" alt="오류">
+        선물하기
+      </div>
+      <div onmouseover="dispHidden('Kategorie_submenus');">
+        <img src="../img/icon/fruit.png" alt="오류">
+        과일·견과·쌀
+      </div>
+      <div onmouseover="dispHidden('Kategorie_submenus');">
+        <img src="../img/icon/bread.png" alt="오류">
+        베이커리·치즈·델리
+      </div>     
+      <div onmouseover="dispHidden('Kategorie_submenus');">
+        <img src="../img/icon/restaurant.png" alt="오류">
+        주방용품
+      </div> 
+      <div onmouseover="dispHidden('Kategorie_submenus');">
+        <img src="../img/icon/household.png" alt="오류">
+        가전제품
+      </div>       
+
+    </div>
+
+    <div class="fix_Kategorie_submenu2" id="Kategorie_submenus" style="z-index: 10; display: none;"
+    onmouseover="dispShow('Kategorie_menus'); dispShow('Kategorie_submenus');"
+    onmouseout="dispHidden('Kategorie_menus'); dispHidden('Kategorie_submenus');">
+      <div>홍삼·즙</div>
+      <div>건강식품</div>
+      <div>베이커리·커피·차</div>
+      <div>뷰티·향수·꽃</div>
+      <div>리빙·생활·유아동</div>
+    </div>
+
+
+    <div class="header_wrap">
+      <div class="header">
+        <div class="header_left">
+          <a href="#" class="sign">회원가입</a>
+          <div class="bar"></div>
+          <a href="javascript:alert_mag();" class="login">로그인</a>
+          <div class="bar"></div>
+          <div class="center" onmouseover="dispShow('Submenu');">
+            <a href="javascript:alert_mag();" class="client"
+              >고객센터 <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <div
+              class="menu_list"
+              id="Submenu"
+              style="display: none; z-index: 1"
+              onmouseover="dispShow('Submenu');"
+              onmouseout="dispHidden('Submenu');"
             >
-              <div onmouseover="dispShow('sub_menu2');">
+              <div class="center_list" onclick="alert_mag()">공지사항</div>
+              <div class="center_list">자주하는 질문</div>
+              <div class="center_list" onclick="alert_mag()">1:1 문의</div>
+              <div class="center_list" onclick="alert_mag()">대량주문 문의</div>
+            </div>
+          </div>
+        </div>
+        <div class="header_nav">
+          <div class="header_logo">
+            <a href="./main.html">
+              <img src="../img/icon/logo.png" alt="MARKET" />
+            </a>
+          </div>
+          <div class="header_search">
+            <input
+              type="text"
+              class="header_input"
+              id="search_id"
+              onkeyup="searchID();"
+              placeholder="검색어를 입력해주세요"
+            />
+            <button
+              type="button"
+              class="header_x"
+              id="search_x"
+              style="display: none; cursor: pointer"
+              onclick="searchClear();"
+            >
+              <img src="../img/icon/x.png" alt="오류" />
+            </button>
+            <button type="button" class="header_bt">
+              <i class="fa-solid fa-magnifying-glass" onclick="alert_mag()"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header_menu_wrap">
+        <div class="header_menu">
+          <div class="header_menu2">
+            <span onmouseover="dispShow('main_menu');" style="cursor: pointer"
+              ><img src="../img/icon/menu.png" alt="menu"
+            /></span>
+            <a href="javascript:alert_mag();" class="header_menu_Kategorie"
+              >카테고리</a>
+            
+            <div
+              class="header_main_menu"
+              id="main_menu"
+              style="display: none; z-index: 10"
+              onmouseover="dispShow('main_menu');"
+              onmouseout="dispHidden('main_menu');"
+            >
+              <div onmouseover="dispShow('sub_menu');">
                 <img src="../img/icon/giftbox.png" alt="오류" /> 선물하기
               </div>
-              <div onmouseover="dispHidden('sub_menu2');" onclick="alert_mag()">
+              <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()">
                 <img src="../img/icon/fruit.png" alt="오류" /> 과일·견과·쌀
               </div>
-              <div onmouseover="dispHidden('sub_menu2');" onclick="alert_mag()">
+              <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()">
                 <img src="../img/icon/bread.png" alt="오류" />
                 베이커리·치즈·델리
               </div>
-              <div onmouseover="dispHidden('sub_menu2');" onclick="alert_mag()">
+              <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()">
                 <img src="../img/icon/restaurant.png" alt="오류" /> 주방용품
               </div>
-              <div onmouseover="dispHidden('sub_menu2');" onclick="alert_mag()">
+              <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()">
                 <img src="../img/icon/household.png" alt="오류" /> 가전제품
               </div>
             </div>
             <div
-              class="fix_submenu_menu2"
-              id="sub_menu2"
-              style="display: none;"
-              onmouseover="dispShow('main_menu2'); dispShow('sub_menu2');"
-              onmouseout="dispHidden('main_menu2'); dispHidden('sub_menu2');"
+              class="header_sub_menu"
+              id="sub_menu"
+              style="display: none; z-index: 10"
+              onmouseover="dispShow('main_menu'); dispShow('sub_menu');"
+              onmouseout="dispHidden('main_menu'); dispHidden('sub_menu');"
             >
               <div onclick="alert_mag()">홍삼·즙</div>
               <div onclick="alert_mag()">건강식품</div>
@@ -35,4 +195,199 @@
               <div onclick="alert_mag()">리빙·생활·유아동</div>
             </div>
           </div>
-        </div> -->
+          <div class="header_menu3">
+            <a href="javascript:alert_mag();" class="header_menu_list"
+              >신상품</a
+            >
+            <a href="javascript:alert_mag();" class="header_menu_list"
+              >베스트</a
+            >
+            <a href="javascript:alert_mag();" class="header_menu_list"
+              >알뜰쇼핑</a
+            >
+            <a href="javascript:alert_mag();" class="header_menu_list"
+              >특가/혜택</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <section class="slide_1set">
+        <div class="slider_content">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide1"></div>
+              <div class="swiper-slide slide2"></div>
+              <div class="swiper-slide slide3"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <div class="slide_menu">
+        <div class="slide_menu2">
+          <div class="title">
+            <h1>이 상품 어때요?</h1>
+          </div>
+          <div class="slide_2set">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide4">
+                  <p>
+                    [크라운] 딸기산도<br />
+                    2,480원
+                  </p>
+                </div>
+                <div class="swiper-slide slide5">
+                  <p>
+                    [설치배송][LG전자] 코드제로 A96 청소기<br />
+                    719,000원
+                  </p>
+                </div>
+                <div class="swiper-slide slide6">
+                  <p>
+                    [신우] 스티커 콜라주 키드 2종<br />
+                    6,900원
+                  </p>
+                </div>
+                <div class="swiper-slide slide7">
+                  <p>
+                    [면사랑] 돈카츠 메밀소바 밀키트 (2인분)<br />
+                    12,500원
+                  </p>
+                </div>
+                <div class="swiper-slide slide8">
+                  <p>
+                    [디딜향] 유기농 쌀로 만든 흑임자 송편<br />
+                    9,500원
+                  </p>
+                </div>
+                <div class="swiper-slide slide9">
+                  <p>
+                    [찹앤찹] PET 동결건조 간식 소간 2종<br />
+                    17,900원
+                  </p>
+                </div>
+                <div class="swiper-slide slide10">
+                  <p>
+                    [CGV] 1인 관람권(2D 일반관)<br />
+                    9,900원
+                  </p>
+                </div>
+                <div class="swiper-slide slide11">
+                  <p>
+                    [최현석의 쵸이닷] 가리비 바질 페스토 파스타<br />
+                    12,580원
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="event_img">
+        <div class="event_img2">
+          <img src="../img/banner/img04.png" alt="할인정보" />
+        </div>
+      </section>
+      <div class="md_wrap">
+        <div class="md_wrap2">
+          <div class="md_h">
+            <h1>MD 추천</h1>
+          </div>
+          <div class="md_menu">
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              채소
+            </button>
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              과일·견과·쌀
+            </button>
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              샐러드·간편식
+            </button>
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              면·양념·오일
+            </button>
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              정육·계란
+            </button>
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              간식·과자·떡
+            </button>
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              베이커리·치즈·델리
+            </button>
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              건강식품
+            </button>
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              생활용품·리빙·캠핑
+            </button>
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              헤어·바디·구강
+            </button>
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              가전제품
+            </button>
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              선물하기
+            </button>
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              베이비·키즈·완구
+            </button>
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              반려동물
+            </button>
+            <button type="button" class="menu_bt" onclick="alert_mag()">
+              주방용품
+            </button>
+          </div>
+          <div class="title2">
+            <h1>MARKET 레시피</h1>
+          </div>
+          <div class="slide_3set">
+            <div class="swiper mySwiper3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide12"><p>치킨 야채 수프</p></div>
+                <div class="swiper-slide slide13">
+                  <p>로스티드 닭 다리&날개</p>
+                </div>
+                <div class="swiper-slide slide14"><p>닭 껍질 튀김</p></div>
+                <div class="swiper-slide slide15"><p>토마토 빙수</p></div>
+                <div class="swiper-slide slide16"><p>토마토 스테이크</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="best_menu">
+            <span onclick="alert_mag()">인기메뉴 TOP50 전체보기</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="move_small" id="STATICMENU">
+      <img src="../img/product/small.png" alt="작은이미지" />
+      <table>
+        <tr>
+          <td onclick="alert_mag();">등급별 혜택</td>
+        </tr>
+        <tr>
+          <td onclick="alert_mag();">레시피</td>
+        </tr>
+      </table>
+    </div>
+    <div class="bt_move_up" onclick="movetop();">
+      <button type="button">
+        <img src="../img/icon/upload (1).png" alt="UP" />
+      </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

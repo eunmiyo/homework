@@ -16,23 +16,22 @@
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body onload="InitializeStaticMenu()">
-    <div class="fix_menu">
+    <div class="fix_menu" style="z-index: 100; display: none;" onscroll="">
       <div class="fix_menu2">
         <div class="fix_menu3">
           <img
             src="../img/icon/menu.png"
             alt="menu"
-            onmouseover="dispShow('main_menu2');"
+            onmouseover="dispShow('Kategorie_menus');"
           />
           <div class="fix_menu_Kategorie">카테고리</div>
         </div>
-
-        <ul class="fix_submenu">
-          <li>신상품</li>
-          <li>베스트</li>
-          <li>알뜰쇼핑</li>
-          <li>특가/혜택</li>
-        </ul>
+        <div class="fix_submenu">
+          <span onclick="alert_mag()">신상품</span>
+          <span onclick="alert_mag()">베스트</span>
+          <span onclick="alert_mag()">알뜰쇼핑</span>
+          <span onclick="alert_mag()">특가/혜택</span>
+        </div>
 
         <div class="fix_menu_search">
           <input
@@ -54,6 +53,45 @@
         </div>
       </div>
     </div>
+    <div class="fix_Kategorie_submenu" id="Kategorie_menus" 
+    style="z-index: 10; display: none;" 
+    onmouseover="dispShow('Kategorie_menus');"
+    onmouseout="dispHidden('Kategorie_menus');">
+
+      <div onmouseover="dispShow('Kategorie_submenus');"
+      onmouseout="dispHidden('Kategorie_submenus');">
+        <img src="../img/icon/giftbox.png" alt="오류">
+        선물하기
+      </div>
+      <div onmouseover="dispHidden('Kategorie_submenus');">
+        <img src="../img/icon/fruit.png" alt="오류">
+        과일·견과·쌀
+      </div>
+      <div onmouseover="dispHidden('Kategorie_submenus');">
+        <img src="../img/icon/bread.png" alt="오류">
+        베이커리·치즈·델리
+      </div>     
+      <div onmouseover="dispHidden('Kategorie_submenus');">
+        <img src="../img/icon/restaurant.png" alt="오류">
+        주방용품
+      </div> 
+      <div onmouseover="dispHidden('Kategorie_submenus');">
+        <img src="../img/icon/household.png" alt="오류">
+        가전제품
+      </div>       
+
+    </div>
+
+    <div class="fix_Kategorie_submenu2" id="Kategorie_submenus" style="z-index: 10; display: none;"
+    onmouseover="dispShow('Kategorie_menus'); dispShow('Kategorie_submenus');"
+    onmouseout="dispHidden('Kategorie_menus'); dispHidden('Kategorie_submenus');">
+      <div>홍삼·즙</div>
+      <div>건강식품</div>
+      <div>베이커리·커피·차</div>
+      <div>뷰티·향수·꽃</div>
+      <div>리빙·생활·유아동</div>
+    </div>
+
 
     <div class="header_wrap">
       <div class="header">
@@ -117,16 +155,17 @@
               ><img src="../img/icon/menu.png" alt="menu"
             /></span>
             <a href="javascript:alert_mag();" class="header_menu_Kategorie"
-              >카테고리</a
-            >
+              >카테고리</a>
+            
             <div
               class="header_main_menu"
               id="main_menu"
-              style="display: none; z-index: 999"
+              style="display: none; z-index: 10"
               onmouseover="dispShow('main_menu');"
               onmouseout="dispHidden('main_menu');"
             >
-              <div onmouseover="dispShow('sub_menu');">
+              <div onmouseover="dispShow('sub_menu');"
+              onmouseout="dispHidden('sub_menu');">
                 <img src="../img/icon/giftbox.png" alt="오류" /> 선물하기
               </div>
               <div onmouseover="dispHidden('sub_menu');" onclick="alert_mag()">
@@ -146,7 +185,7 @@
             <div
               class="header_sub_menu"
               id="sub_menu"
-              style="display: none; z-index: 999"
+              style="display: none; z-index: 10"
               onmouseover="dispShow('main_menu'); dispShow('sub_menu');"
               onmouseout="dispHidden('main_menu'); dispHidden('sub_menu');"
             >
