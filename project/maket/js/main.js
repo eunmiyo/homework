@@ -48,16 +48,16 @@ function dispToggle(objId) {
   }
 }
 
-let header = document.querySelector("#header_wrap");
-let headerHeight = header.offsetHeight;
-let fixed = document.querySelector('#fix_menu')
+// let header = document.querySelector("#header_wrap");
+// let headerHeight = header.offsetHeight;
+// let fixed = document.querySelector('#fix_menu')
 
-window.onscroll = function() {
-  let windowTop = window.scrollY;
-  if (windowTop >= headerHeight) {
-    fixed.style.display = "block";
-  } 
-}
+// window.onscroll = function() {
+//   let windowTop = window.scrollY;
+//   if (windowTop >= headerHeight) {
+//     fixed.style.display = "block";
+//   } 
+// }
 
 function dispShow(objId) {
   var obj = document.getElementById(objId);
