@@ -762,7 +762,7 @@ table tr td {
 
 .fix_submenu {
   box-sizing: border-box;
-  margin: 0;
+  margin-left: 150px;
   height: 100%;
   font-size: 18px;
   display: flex;
@@ -771,7 +771,7 @@ table tr td {
 }
 
 .fix_submenu li {
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .fix_submenu li:hover {
