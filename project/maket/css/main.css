@@ -655,8 +655,18 @@ table tr td {
   height: 60px;
   background: #fff;
   box-shadow: 2px 2px 10px 2px lightgray;
-  position: fixed;
   top: 0px;
+  position: fixed;
+  animation: down 0.5s ease;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .fix_menu2 {
@@ -692,7 +702,6 @@ table tr td {
   color: purple;
   cursor: pointer;
 }
-
 
 /* 카테고리옆에 메뉴이미지 */
 .fix_menu3 img {
@@ -784,5 +793,3 @@ table tr td {
   color: purple;
   cursor: pointer;
 }
-
-
