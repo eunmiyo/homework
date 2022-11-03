@@ -130,7 +130,6 @@ function searchClear2() {
 
 // 상단페이지이동
 function movetop() {
-  console.log(1);
   window.scrollTo(0, 0);
 }
 

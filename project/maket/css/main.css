@@ -177,9 +177,10 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-family: ;
 }
 
-.header_menu2 span:hover {
+.header_Kategorie:hover {
   color: purple;
 }
 
@@ -702,12 +703,15 @@ table tr td {
 }
 
 .fix_menu3 {
-  display: flex;
   position: relative;
   cursor: pointer;
 }
 
-.fix_menu3 .fix_menu_Kategorie:hover {
+.fix_Kategorie {
+  display: flex;
+}
+
+.fix_Kategorie:hover {
   color: purple;
 }
 
