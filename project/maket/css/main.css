@@ -623,6 +623,7 @@ a {
 .move_small table {
   width: 90px;
   border: 1px solid rgb(217, 217, 217);
+  background: #fff;
   border-collapse: collapse;
   font-size: 14px;
   cursor: pointer;
@@ -696,6 +697,7 @@ table tr td {
 
 .fix_menu3 {
   display: flex;
+  position: relative;
 }
 
 .fix_menu3:hover {

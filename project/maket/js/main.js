@@ -67,6 +67,7 @@ function navigo() {
 }
 navigo();
 
+// 고정 header 하위메뉴 보이고 사라지기
 function dispShow(objId) {
   var obj = document.getElementById(objId);
 
